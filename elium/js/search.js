@@ -2,8 +2,9 @@
   var en=window.LANG==='en',P=window.ELIUM.projects;
   var base=(document.documentElement.getAttribute('data-base')||'');
   var idx=[];
-  P.forEach(function(p){idx.push({t:en?p.en:p.ko,g:en?'Projects':'프로젝트',s:(en?p.rg_en:p.rg_ko)+' '+(en?p.sub_en:p.sub_ko),h:base+'project.html?id='+p.id,x:p.ko+' '+p.en+' '+p.rg_ko+' '+p.sub_ko})});
+  P.forEach(function(p){idx.push({t:en?p.en:p.ko,g:en?'Projects':'프로젝트',s:(en?p.rg_en:p.rg_ko),h:base+'project.html?id='+p.id,x:p.ko+' '+p.en+' '+p.rg_ko+' '+p.rg_en+' '+p.f_ko.map(function(r){return r.join(' ')}).join(' ')+' '+p.blk})});
   [{t:'Brand',tk:'브랜드',g:'Elysium',h:'index.html#brand',x:'엘리시온 elysion elysium 당신만의 공간 your own'},
+   {t:'Sales Calendar',tk:'분양 일정',g:'Calendar',h:'index.html#calendar',x:'분양 캘린더 일정 분양예정 분양중 sales schedule 세종 인천계양'},
    {t:'Identity',tk:'브랜드 아이덴티티',g:'BI',h:'identity.html',x:'색상 로고 deep blue gold beige pink color logo bi 다운로드 download'},
    {t:en?'Contact':'문의',tk:'문의',g:en?'Contact':'문의',h:'index.html#contact',x:'대방산업개발 daebang industrial development 서울 문의 contact'}].forEach(function(o){idx.push({t:en?o.t:o.tk,g:o.g,s:'',h:base+o.h,x:o.x})});
   var el=document.createElement('div');el.className='srch';el.setAttribute('aria-hidden','true');

@@ -11,7 +11,7 @@
   if(g){
     var P=window.ELIUM.projects,en=window.LANG==='en';
     g.innerHTML=P.map(function(p,i){
-      return '<a class="card c'+(i%4)+' rv" data-t="'+p.t+'" href="project.html?id='+p.id+'"><div class="ph"><img src="img/'+p.cover+'.jpg" alt="'+(en?p.en:p.ko)+'" loading="lazy"></div><div class="cap"><span class="n">'+String(i+1).padStart(2,'0')+'</span><h3>'+(en?p.en:p.ko)+'</h3><p>'+(en?p.rg_en:p.rg_ko)+'</p></div></a>'}).join('');
+      return '<a class="card c'+(i%4)+' rv" data-t="'+p.t+'" href="project.html?id='+p.id+'">'+(p.img?'<div class="ph"><img src="img/'+p.img+'.jpg" alt="'+(en?p.en:p.ko)+'" loading="lazy"></div>':'<div class="ph pn-panel '+p.c+'"><span class="os">'+p.blk+'</span></div>')+'<div class="cap"><span class="n">'+String(i+1).padStart(2,'0')+'</span><h3>'+(en?p.en:p.ko)+'</h3><p>'+(en?p.rg_en:p.rg_ko)+'</p></div></a>'}).join('');
     [].forEach.call(g.querySelectorAll('.rv'),function(e){io?io.observe(e):e.classList.add('in')});
     var fs=document.querySelectorAll('.flt button');
     [].forEach.call(fs,function(b){b.onclick=function(){
