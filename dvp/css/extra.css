@@ -208,3 +208,5 @@ html.en .sub-visual .sub-en{display:none}
 @media(max-width:760px){.logo img{height:24px}.slide .cap::before{left:-24px;right:-24px;width:auto;background:rgba(0,0,0,.42)}}
 .header::before{content:"";position:absolute;left:0;right:0;top:0;height:150px;background:linear-gradient(180deg,rgba(0,0,0,.42),rgba(0,0,0,0));pointer-events:none;transition:opacity .3s}
 .header.is-hover::before,.header.is-solid::before{opacity:0}
+
+.slide{transform:scale(1.03)}.slide.on{transform:scale(1)}
