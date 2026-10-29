@@ -46,6 +46,12 @@ svg{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-l
 .util__txt{font-family:Oswald,sans-serif;font-size:14px;padding:0 10px}
 .util__btn{width:38px;height:38px;color:inherit}
 .util__btn svg{width:22px;height:22px;margin:auto}
+.util__btn .ico{width:36px;height:auto;margin:auto;filter:brightness(0) invert(1);transition:filter .3s}
+.hd.is-hover .util__btn .ico,.hd.is-solid .util__btn .ico{filter:none}
+.util__wish{display:flex;align-items:center;gap:6px;font-size:13px;font-weight:300;padding:0 12px 0 0;margin-right:6px;border-right:1px solid rgba(255,255,255,.35)}
+.util__wish img{width:28px;height:28px;transition:filter .3s}
+.hd.is-hover .util__wish,.hd.is-solid .util__wish{border-color:var(--line)}
+.hd.is-hover .util__wish img,.hd.is-solid .util__wish img{filter:brightness(0) opacity(.75)}
 
 /* full menu */
 .full{position:fixed;inset:0;background:var(--navy-d);color:#fff;z-index:200;opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s;overflow:auto}
@@ -126,15 +132,15 @@ svg{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-l
 
 /* banner */
 .ban{position:relative;padding:120px 0 110px;background-size:cover;background-position:center;background-attachment:fixed;color:#fff}
-.ban__shade{position:absolute;inset:0;background:rgba(14,30,62,.55)}
+.ban__shade{position:absolute;inset:0;background:rgba(14,30,62,.6)}
 .ban .wrap{position:relative}
 .ban h2{font-size:clamp(24px,3vw,36px);font-weight:300;line-height:1.5;letter-spacing:-.03em;margin-bottom:46px}
-.ban__list{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.ban__list a{display:flex;align-items:center;gap:18px;background:#fff;color:var(--ink);padding:26px 28px;transition:transform .3s,box-shadow .3s}
-.ban__list a:hover{transform:translateY(-4px);box-shadow:0 12px 24px rgba(0,0,0,.2)}
-.ban__list svg{width:38px;height:38px;color:var(--navy);flex:none}
-.ban__list span{font-size:16px;font-weight:500;display:flex;flex-direction:column}
-.ban__list small{font-size:12px;font-weight:400;color:var(--navy);margin-top:2px}
+.ban__list{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid rgba(255,255,255,.35)}
+.ban__list li+li{border-left:1px solid rgba(255,255,255,.35)}
+.ban__list a{display:flex;flex-direction:column;align-items:center;gap:18px;padding:38px 10px 30px;transition:background .3s}
+.ban__list a:hover{background:rgba(43,143,208,.55)}
+.ban__list img{width:96px;height:96px;object-fit:contain;margin:-18px 0 -10px}
+.ban__list span{font-size:16px;font-weight:500}
 
 /* footer */
 .ft{background:var(--foot);color:#9aa0a8;padding:44px 0 56px;font-size:13px;font-weight:300}
@@ -150,7 +156,7 @@ svg{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-l
 /* floating */
 .top{position:fixed;right:28px;bottom:28px;width:46px;height:46px;border-radius:50%;background:var(--navy);color:#fff;display:grid;place-items:center;opacity:0;visibility:hidden;transition:opacity .3s;z-index:90;box-shadow:0 4px 12px rgba(0,0,0,.25)}
 .top.is-on{opacity:1;visibility:visible}
-.top svg{width:22px;height:22px}
+.top img{width:46px;height:46px}
 .tab{position:fixed;top:0;right:0;width:104px;height:104px;z-index:110;background:var(--navy);color:#fff;clip-path:polygon(0 0,100% 0,100% 100%);display:block;transition:background .3s}
 .tab:hover{background:var(--sky)}
 .tab span{position:absolute;right:10px;top:42px;font-size:12px;font-weight:500;transform:rotate(45deg)}
@@ -161,7 +167,7 @@ svg{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-l
   .hd.is-hover .gnb__bg{height:0}
   .full__in{grid-template-columns:repeat(3,1fr)}
   .hd__in{padding:0 20px}
-  .util{margin-right:70px}
+  .util{margin-right:70px}.util__wish span{display:none}
 }
 @media(max-width:760px){
   :root{--hd:64px}
@@ -177,7 +183,7 @@ svg{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-l
   .card--wide .card__img{height:auto;aspect-ratio:4/3}
   .card--wide h3{margin-top:20px}
   .ban{background-attachment:scroll}
-  .ban__list{grid-template-columns:1fr}
+  .ban__list{grid-template-columns:repeat(2,1fr)}.ban__list li:nth-child(3){border-left:0}.ban__list li:nth-child(n+3){border-top:1px solid rgba(255,255,255,.35)}
   .ft__row{flex-direction:column;align-items:flex-start}
   .full__in{grid-template-columns:repeat(2,1fr);padding-top:100px}
   .tab{width:80px;height:80px}
