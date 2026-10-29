@@ -10,226 +10,202 @@
 <link rel="apple-touch-icon" href="assets/img/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Oswald:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Oswald:wght@300;400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.className+=' js'</script>
 </head>
 <body>
 <a class="skip" href="#content">본문으로 건너뛰기</a>
 
 <!-- HEADER -->
-<header class="hd" id="hd">
-  <div class="hd__in">
-    <a class="hd__logo" href="./" aria-label="대방산업개발 홈">
-      <img class="logo-w" src="assets/img/logo_kr_w.png" alt="대방산업개발">
-      <img class="logo-c" src="assets/img/logo_kr.png" alt="" aria-hidden="true">
-    </a>
-    <nav class="gnb" aria-label="주 메뉴">
-      <ul>
-        <li><a href="#">회사소개</a>
-          <div class="gnb__sub"><a href="#">회사개요</a><a href="#">CEO 인사말</a><a href="#">경영이념</a><a href="#">연혁</a><a href="#">조직</a><a href="#">CI / BI 소개</a><a href="#">오시는 길</a></div></li>
-        <li><a href="#business">사업영역</a>
-          <div class="gnb__sub"><a href="#">분양 캘린더</a><a href="#">주택 / 분양사업</a><a href="#">수주 사업</a><a href="#">개발 사업</a><a href="#">F&amp;B 사업</a><a href="#">기타 사업</a></div></li>
-        <li><a href="#">지속가능경영</a>
-          <div class="gnb__sub"><a href="#">품질경영</a><a href="#">윤리경영</a><a href="#">사회공헌</a><a href="#">상생경영</a><a href="#">안전/보건경영</a></div></li>
-        <li><a href="#news">홍보센터</a>
-          <div class="gnb__sub"><a href="#">뉴스</a><a href="#">언론 속 대방</a><a href="#">분양광고</a></div></li>
-        <li><a href="#">인재채용</a>
-          <div class="gnb__sub"><a href="#">인재상</a><a href="#">인사제도</a><a href="#">채용절차</a><a href="#">공고 및 지원</a></div></li>
-        <li><a href="#">고객지원</a>
-          <div class="gnb__sub"><a href="#">고객지원 안내</a><a href="#">FAQ</a><a href="#">관심고객등록</a><a href="#">고객문의</a><a href="#">하자문의</a></div></li>
-      </ul>
-    </nav>
-    <div class="util">
-      <a href="#" class="util__wish"><img src="assets/img/ic_wish_hd.png" alt=""><span>관심고객등록</span></a>
-      <a href="#" class="util__txt">EN</a>
-      <button class="util__btn" aria-label="검색"><img class="ico" src="assets/img/ic_search.png" alt=""></button>
-      <button class="util__btn" id="menuBtn" aria-label="전체메뉴"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+<header class="header" id="header">
+  <div class="header-warp">
+    <div class="header-inner">
+      <a class="logo" href="./" aria-label="대방산업개발">
+        <img class="logo-w" src="assets/img/logo_kr_w.png" alt="대방산업개발">
+        <img class="logo-c" src="assets/img/logo_kr.png" alt="" aria-hidden="true">
+      </a>
+      <nav class="gnb" aria-label="주 메뉴">
+        <ul>
+          <li><a href="https://www.db-dvp.co.kr/company/overview">회사소개</a>
+            <div class="sub"><a href="https://www.db-dvp.co.kr/company/overview">회사개요</a><a href="https://www.db-dvp.co.kr/company/ceo">CEO 인사말</a><a href="https://www.db-dvp.co.kr/company/philosophy">경영이념</a><a href="https://www.db-dvp.co.kr/company/history_a">연혁</a><a href="https://www.db-dvp.co.kr/company/organization">조직</a><a href="https://www.db-dvp.co.kr/company/ci">CI / BI 소개</a><a href="https://www.db-dvp.co.kr/company/contact">오시는 길</a></div></li>
+          <li><a href="https://www.db-dvp.co.kr/business/calendar">사업영역</a>
+            <div class="sub"><a href="https://www.db-dvp.co.kr/business/calendar">분양 캘린더</a><a href="https://www.db-dvp.co.kr/business/sell">주택 / 분양사업</a><a href="https://www.db-dvp.co.kr/business/order">수주 사업</a><a href="https://www.db-dvp.co.kr/business/development">개발 사업</a><a href="https://www.db-dvp.co.kr/business/fnb">F&amp;B 사업</a><a href="https://www.db-dvp.co.kr/business/etc">기타 사업</a></div></li>
+          <li><a href="https://www.db-dvp.co.kr/op/quality">지속가능경영</a>
+            <div class="sub"><a href="https://www.db-dvp.co.kr/op/quality">품질경영</a><a href="https://www.db-dvp.co.kr/op/ethics">윤리경영</a><a href="https://www.db-dvp.co.kr/op/social">사회공헌</a><a href="https://www.db-dvp.co.kr/op/winwin">상생경영</a><a href="https://www.db-dvp.co.kr/op/safe">안전/보건경영</a></div></li>
+          <li><a href="https://www.db-dvp.co.kr/pr/news">홍보센터</a>
+            <div class="sub"><a href="https://www.db-dvp.co.kr/pr/news">뉴스</a><a href="https://www.db-dvp.co.kr/pr/media">언론 속 대방</a><a href="https://www.db-dvp.co.kr/pr/advertise">분양광고</a></div></li>
+          <li><a href="https://www.db-dvp.co.kr/recruit/recruit">인재채용</a>
+            <div class="sub"><a href="https://www.db-dvp.co.kr/recruit/recruit">인재상</a><a href="https://www.db-dvp.co.kr/recruit/system">인사제도</a><a href="https://www.db-dvp.co.kr/recruit/process">채용절차</a><a href="https://www.db-dvp.co.kr/recruit/apply">공고 및 지원</a></div></li>
+          <li><a href="https://www.db-dvp.co.kr/cs/guide">고객지원</a>
+            <div class="sub"><a href="https://www.db-dvp.co.kr/cs/guide">고객지원 안내</a><a href="https://www.db-dvp.co.kr/cs/faq">FAQ</a><a href="https://www.db-dvp.co.kr/cs/wish">관심고객등록</a><a href="https://www.db-dvp.co.kr/cs/customer">고객문의</a><a href="https://www.db-dvp.co.kr/cs/flaw">하자문의</a></div></li>
+        </ul>
+      </nav>
+      <div class="util">
+        <a class="util-en" href="#">EN</a>
+        <button class="util-btn" aria-label="검색"><img src="assets/img/ic_search.png" alt=""></button>
+        <button class="util-btn util-menu" id="menuBtn" aria-label="전체메뉴"><span></span><span></span><span></span></button>
+      </div>
     </div>
   </div>
-  <div class="gnb__bg"></div>
+  <div class="gnb-bg"></div>
 </header>
 
 <!-- FULL MENU -->
 <div class="full" id="full" aria-hidden="true">
-  <button class="full__x" id="fullX" aria-label="닫기"><svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></svg></button>
-  <div class="full__in">
-    <dl><dt>회사소개</dt><dd><a href="#">회사개요</a><a href="#">CEO 인사말</a><a href="#">경영이념</a><a href="#">연혁</a><a href="#">조직</a><a href="#">CI / BI 소개</a><a href="#">오시는 길</a></dd></dl>
-    <dl><dt>사업영역</dt><dd><a href="#">분양 캘린더</a><a href="#">주택 / 분양사업</a><a href="#">수주 사업</a><a href="#">개발 사업</a><a href="#">F&amp;B 사업</a><a href="#">기타 사업</a></dd></dl>
-    <dl><dt>지속가능경영</dt><dd><a href="#">품질경영</a><a href="#">윤리경영</a><a href="#">사회공헌</a><a href="#">상생경영</a><a href="#">안전/보건경영</a></dd></dl>
-    <dl><dt>홍보센터</dt><dd><a href="#">뉴스</a><a href="#">언론 속 대방</a><a href="#">분양광고</a></dd></dl>
-    <dl><dt>인재채용</dt><dd><a href="#">인재상</a><a href="#">인사제도</a><a href="#">채용절차</a><a href="#">공고 및 지원</a></dd></dl>
-    <dl><dt>고객지원</dt><dd><a href="#">고객지원 안내</a><a href="#">FAQ</a><a href="#">관심고객등록</a><a href="#">고객문의</a><a href="#">하자문의</a></dd></dl>
+  <button class="full-x" id="fullX" aria-label="닫기"></button>
+  <div class="full-in">
+    <dl><dt>회사소개</dt><dd><a href="https://www.db-dvp.co.kr/company/overview">회사개요</a><a href="https://www.db-dvp.co.kr/company/ceo">CEO 인사말</a><a href="https://www.db-dvp.co.kr/company/philosophy">경영이념</a><a href="https://www.db-dvp.co.kr/company/history_a">연혁</a><a href="https://www.db-dvp.co.kr/company/organization">조직</a><a href="https://www.db-dvp.co.kr/company/ci">CI / BI 소개</a><a href="https://www.db-dvp.co.kr/company/contact">오시는 길</a></dd></dl>
+    <dl><dt>사업영역</dt><dd><a href="https://www.db-dvp.co.kr/business/calendar">분양 캘린더</a><a href="https://www.db-dvp.co.kr/business/sell">주택 / 분양사업</a><a href="https://www.db-dvp.co.kr/business/order">수주 사업</a><a href="https://www.db-dvp.co.kr/business/development">개발 사업</a><a href="https://www.db-dvp.co.kr/business/fnb">F&amp;B 사업</a><a href="https://www.db-dvp.co.kr/business/etc">기타 사업</a></dd></dl>
+    <dl><dt>지속가능경영</dt><dd><a href="https://www.db-dvp.co.kr/op/quality">품질경영</a><a href="https://www.db-dvp.co.kr/op/ethics">윤리경영</a><a href="https://www.db-dvp.co.kr/op/social">사회공헌</a><a href="https://www.db-dvp.co.kr/op/winwin">상생경영</a><a href="https://www.db-dvp.co.kr/op/safe">안전/보건경영</a></dd></dl>
+    <dl><dt>홍보센터</dt><dd><a href="https://www.db-dvp.co.kr/pr/news">뉴스</a><a href="https://www.db-dvp.co.kr/pr/media">언론 속 대방</a><a href="https://www.db-dvp.co.kr/pr/advertise">분양광고</a></dd></dl>
+    <dl><dt>인재채용</dt><dd><a href="https://www.db-dvp.co.kr/recruit/recruit">인재상</a><a href="https://www.db-dvp.co.kr/recruit/system">인사제도</a><a href="https://www.db-dvp.co.kr/recruit/process">채용절차</a><a href="https://www.db-dvp.co.kr/recruit/apply">공고 및 지원</a></dd></dl>
+    <dl><dt>고객지원</dt><dd><a href="https://www.db-dvp.co.kr/cs/guide">고객지원 안내</a><a href="https://www.db-dvp.co.kr/cs/faq">FAQ</a><a href="https://www.db-dvp.co.kr/cs/wish">관심고객등록</a><a href="https://www.db-dvp.co.kr/cs/customer">고객문의</a><a href="https://www.db-dvp.co.kr/cs/flaw">하자문의</a></dd></dl>
   </div>
 </div>
 
 <main id="content">
 
-<!-- HERO -->
-<section class="hero" id="hero">
-  <div class="hero__slides">
-    <div class="hero__slide is-on" style="background-image:url(assets/img/hero1.jpg)"></div>
-    <div class="hero__slide" style="background-image:url(assets/img/hero2.jpg)"></div>
-    <div class="hero__slide" style="background-image:url(assets/img/hero3.jpg)"></div>
+<!-- VISUAL -->
+<div class="main-visual" id="visual">
+  <div class="slides">
+    <div class="slide on" style="background-image:url(assets/img/hero1.jpg)"></div>
+    <div class="slide" style="background-image:url(assets/img/hero2.jpg)"></div>
+    <div class="slide" style="background-image:url(assets/img/hero3.jpg)"></div>
   </div>
-  <div class="hero__shade"></div>
-  <div class="hero__txt">
-    <p class="hero__en">IMAGINE IT, AND BUILD IT</p>
-    <h1>대방산업개발은<br>새로운 가치를 창조합니다</h1>
-    <p class="hero__sub">고품격 주거문화를 만들고, 시대에 맞는 건축을 이끌며, 미래를 개발합니다.</p>
-  </div>
-  <div class="hero__ctl">
-    <button class="hero__dot is-on" aria-label="슬라이드 1"></button>
-    <button class="hero__dot" aria-label="슬라이드 2"></button>
-    <button class="hero__dot" aria-label="슬라이드 3"></button>
-  </div>
-  <a class="hero__scroll" href="#intro" aria-label="아래로"><span></span></a>
-</section>
+  <span class="scroll" aria-hidden="true"><i></i></span>
+  <a class="main-policy" href="https://www.db-dvp.co.kr/"><i></i>개인정보 처리방침</a>
+</div>
 
-<!-- INTRO + STATS -->
-<section class="intro" id="intro">
-  <div class="wrap">
-    <h2 class="intro__tit">대방산업개발은 새로운 가치를 창조합니다</h2>
-    <p class="intro__txt">2002년 설립 이래 주택·분양, 수주, 개발 사업을 통해<br>고객의 행복한 미래를 짓고 있습니다.</p>
-    <ul class="stats">
-      <li>
-        <p class="stats__lb">설립<br>2002년부터<br>현재까지</p>
-        <svg class="stats__ic" viewBox="0 0 80 80"><rect x="14" y="30" width="22" height="40"/><rect x="40" y="14" width="26" height="56"/><path d="M20 38h10M20 46h10M20 54h10M46 22h14M46 30h14M46 38h14M46 46h14M46 54h14M8 70h64"/></svg>
-        <p class="stats__num"><b data-to="24">0</b><em>주년</em></p>
-      </li>
-      <li>
-        <p class="stats__lb">사업<br>영역</p>
-        <svg class="stats__ic" viewBox="0 0 80 80"><rect x="10" y="10" width="26" height="26"/><rect x="44" y="10" width="26" height="26"/><rect x="10" y="44" width="26" height="26"/><rect x="44" y="44" width="26" height="26"/></svg>
-        <p class="stats__num"><b data-to="4">0</b><em>개</em></p>
-      </li>
-      <li>
-        <p class="stats__lb">대표<br>브랜드</p>
-        <svg class="stats__ic" viewBox="0 0 80 80"><path d="M40 8 49 30l23 2-17 15 5 23-20-12-20 12 5-23L8 32l23-2z"/></svg>
-        <p class="stats__num"><b data-to="2">0</b><em>개</em></p>
-      </li>
-      <li>
-        <p class="stats__lb">분양<br>정보<br>단지</p>
-        <svg class="stats__ic" viewBox="0 0 80 80"><path d="M40 8c-13 0-22 9-22 21 0 16 22 43 22 43s22-27 22-43C62 17 53 8 40 8z"/><circle cx="40" cy="29" r="8"/></svg>
-        <p class="stats__num"><b data-to="4">0</b><em>개</em></p>
-      </li>
-    </ul>
-  </div>
-</section>
+<div class="content-box">
 
-<!-- NEWS -->
-<section class="news" id="news">
-  <div class="wrap">
-    <div class="sec-hd"><h2>보도자료</h2><a class="more" href="#">+ more</a></div>
-    <ul class="news__list">
-      <li><a href="#">
-        <p class="news__meta">2026.10.20</p>
-        <p class="news__tit">대방산업개발, '2026 마인드런 페스티벌' 공식 협찬</p>
-      </a></li>
-      <li><a href="#">
-        <p class="news__meta">2026.10.16</p>
-        <p class="news__tit">대방산업개발, '아이스버그골프·서울신문 오픈' 협찬</p>
-      </a></li>
-      <li><a href="#">
-        <p class="news__meta">2026.10.14</p>
-        <p class="news__tit">대방산업개발 강명식 차장, 산업재해예방 국무총리 표창</p>
-      </a></li>
-    </ul>
-  </div>
-</section>
-
-<!-- BUSINESS -->
-<section class="biz" id="business">
-  <div class="wrap">
-    <ul class="biz__list">
-      <li><a href="#">
-        <svg viewBox="0 0 80 80"><rect x="16" y="16" width="20" height="54"/><rect x="40" y="30" width="24" height="40"/><path d="M22 26h8M22 36h8M22 46h8M22 56h8M46 40h12M46 50h12M46 60h12M8 70h64"/></svg>
-        <span>주택 · 분양</span></a></li>
-      <li><a href="#">
-        <svg viewBox="0 0 80 80"><path d="M10 70h60M18 70V34l22-16 22 16v36M32 70V48h16v22"/></svg>
-        <span>수주</span></a></li>
-      <li><a href="#">
-        <svg viewBox="0 0 80 80"><path d="M10 70h60M20 70V40M34 70V24M48 70V34M62 70V14"/><path d="M12 30l22-14 14 10 18-14"/></svg>
-        <span>개발</span></a></li>
-      <li><a href="#">
-        <svg viewBox="0 0 80 80"><path d="M20 14h40l-6 24a14 14 0 0 1-28 0zM40 52v18M28 70h24"/></svg>
-        <span>F&amp;B</span></a></li>
-      <li><a href="#">
-        <svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="26"/><path d="M40 14v52M14 40h52"/></svg>
-        <span>기타</span></a></li>
-    </ul>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section class="proj" id="projects">
-  <div class="wrap">
-    <div class="sec-hd"><h2>주요 프로젝트</h2></div>
-    <div class="proj__grid">
-      <a class="card" href="#">
-        <div class="card__img"><img src="assets/img/p1.jpg" alt="" loading="lazy"></div>
-        <h3>부산에코델타시티 2차 대방 엘리움</h3>
-        <p>부산 에코델타시티 29BL. 대방 엘리움 브랜드의 주거 단지입니다.</p>
-        <p class="tag">#대방엘리움 #부산 #분양</p>
-      </a>
-      <a class="card" href="#">
-        <div class="card__img"><img src="assets/img/p2.jpg" alt="" loading="lazy"></div>
-        <h3>동탄역 대방 엘리움 더 시그니처</h3>
-        <p>동탄2신도시 동탄역 인근 주거용 오피스텔입니다.</p>
-        <p class="tag">#대방엘리움 #동탄2신도시 #오피스텔</p>
-      </a>
-      <a class="card" href="#">
-        <div class="card__img"><img src="assets/img/p3.jpg" alt="" loading="lazy"></div>
-        <h3>시흥거모 대방 엘리움 더 루체</h3>
-        <p>시흥거모 S-2BL, B-2BL 1·2차 단지입니다.</p>
-        <p class="tag">#대방엘리움 #시흥 #분양</p>
-      </a>
-      <a class="card card--wide" href="#">
-        <div class="card__img"><img src="assets/img/p4.jpg" alt="" loading="lazy"></div>
-        <h3>부산에코델타시티 1차 대방 엘리움</h3>
-        <p>부산 에코델타시티 31BL. 대방 엘리움 브랜드의 주거 단지입니다.</p>
-        <p class="tag">#대방엘리움 #부산 #분양</p>
-      </a>
+<!-- SECTION 1 -->
+<section class="sec1">
+  <div class="row-warp">
+    <h1 class="reveal">대방산업개발은 새로운 가치를 창조합니다</h1>
+    <p class="reveal">고객의 행복한 미래가 대방산업개발의 미래입니다.<br class="m-none"> 고품격 주거문화를 만들고, 시대에 맞는 건축을 이끌며, 미래를 개발합니다.</p>
+    <div class="count-warp reveal">
+      <dl>
+        <dt><span>설립<br>2002년부터<br>현재까지</span>
+          <svg class="count-icon" viewBox="0 0 127 100"><g class="l"><rect x="38" y="44" width="30" height="50"/><rect x="72" y="22" width="34" height="72"/><path d="M30 94h86M46 54h14M46 64h14M46 74h14M80 32h18M80 42h18M80 52h18M80 62h18M80 72h18"/></g><g class="p"><path d="M20 18h22v16H20z"/><path d="M20 24h22M26 14v6M36 14v6"/></g></svg></dt>
+        <dd><strong data-to="24">0</strong><span>주년</span></dd>
+      </dl>
+      <dl>
+        <dt><span>사업<br>영역</span>
+          <svg class="count-icon" viewBox="0 0 127 100"><g class="l"><rect x="30" y="18" width="30" height="30"/><rect x="66" y="18" width="30" height="30"/><rect x="30" y="54" width="30" height="30"/><rect x="66" y="54" width="30" height="30"/></g><g class="p"><path d="M38 30h14M38 38h14M74 30h14M74 38h14M38 66h14M74 66h14M74 74h14"/><circle cx="45" cy="72" r="5"/></g></svg></dt>
+        <dd><strong data-to="5">0</strong><span>개</span></dd>
+      </dl>
+      <dl>
+        <dt><span>대표<br>브랜드</span>
+          <svg class="count-icon" viewBox="0 0 127 100"><g class="l"><path d="M50 94V40l14-12 14 12v54M30 94h66"/><path d="M78 94V54l12-10 12 10v40"/></g><g class="p"><path d="M64 8l3 7 8 1-6 5 2 8-7-4-7 4 2-8-6-5 8-1z"/><path d="M58 52h12M58 62h12M58 72h12M84 64h12M84 74h12"/></g></svg></dt>
+        <dd><strong data-to="2">0</strong><span>개</span></dd>
+      </dl>
+      <dl>
+        <dt><span>분양<br>정보<br>단지</span>
+          <svg class="count-icon" viewBox="0 0 127 100"><g class="l"><path d="M24 30l24-8 26 10 28-10v52l-28 10-26-10-24 8z"/><path d="M48 22v52M74 32v52"/></g><g class="p"><path d="M62 12c-8 0-14 6-14 13 0 10 14 26 14 26s14-16 14-26c0-7-6-13-14-13z"/><circle cx="62" cy="25" r="5"/></g></svg></dt>
+        <dd><strong data-to="4">0</strong><span>개</span></dd>
+      </dl>
     </div>
   </div>
 </section>
 
-<!-- BANNER -->
-<section class="ban" style="background-image:url(assets/img/hero3.jpg)">
-  <div class="ban__shade"></div>
-  <div class="wrap">
-    <h2>집에 대한 바른 생각,<br>대방산업개발이 만들어갑니다</h2>
-    <ul class="ban__list">
-      <li><a href="#"><img src="assets/img/ic_faq.png" alt=""><span>FAQ</span></a></li>
-      <li><a href="#"><img src="assets/img/ic_finish.png" alt=""><span>마감재</span></a></li>
-      <li><a href="#"><img src="assets/img/ic_wish.png" alt=""><span>관심단지등록</span></a></li>
-      <li><a href="#"><img src="assets/img/ic_inquiry.png" alt=""><span>1:1문의</span></a></li>
+<!-- SECTION 2: NEWS -->
+<section class="sec2" id="news">
+  <div class="row-warp">
+    <div class="sec-head reveal"><h1>보도자료</h1><a class="more" href="https://www.db-dvp.co.kr/pr/news">+ more</a></div>
+    <ul class="main-news reveal">
+      <li><a href="https://www.db-dvp.co.kr/pr/news-detail/586?type=all"><span class="date">2026.10.20</span><strong>대방산업개발, '2026 마인드런 페스티벌' 공식 협찬</strong></a></li>
+      <li><a href="https://www.db-dvp.co.kr/pr/news-detail/585?type=all"><span class="date">2026.10.16</span><strong>대방산업개발, '아이스버그골프·서울신문 오픈' 협찬</strong></a></li>
+      <li><a href="https://www.db-dvp.co.kr/pr/news-detail/579?type=all"><span class="date">2026.10.14</span><strong>대방산업개발 강명식 차장, 산업재해예방 국무총리 표창</strong></a></li>
+      <li><a href="https://www.db-dvp.co.kr/pr/news-detail/571?type=all"><span class="date">2026.03.17</span><strong>대방산업개발, '올해의 조경 명작' 〈향기 향〉상 수상</strong></a></li>
     </ul>
   </div>
 </section>
 
+<!-- SECTION 3: BUSINESS -->
+<section class="sec3" id="business">
+  <div class="row-warp">
+    <ul>
+      <li><a href="https://www.db-dvp.co.kr/business/sell">
+        <svg viewBox="0 0 120 143"><path d="M22 118V52h30v66M52 118V30h34v88M86 118V66h14v52M12 118h98M30 64h14M30 78h14M30 92h14M62 42h16M62 56h16M62 70h16M62 84h16M62 98h16"/></svg><span>주택 · 분양</span></a></li>
+      <li><a href="https://www.db-dvp.co.kr/business/order">
+        <svg viewBox="0 0 120 143"><path d="M14 118h92M24 118V76h30v42M54 118V58h32v60M30 86h18M60 70h20M60 84h20M60 98h20M72 58V22h28M72 22l-12-8M100 22v22M100 44v8"/></svg><span>수주</span></a></li>
+      <li><a href="https://www.db-dvp.co.kr/business/development">
+        <svg viewBox="0 0 120 143"><path d="M12 118h96M22 118V84M42 118V56M62 118V70M82 118V36M100 118V80"/><path d="M14 66l26-22 22 14 26-26 14 8"/></svg><span>개발</span></a></li>
+      <li><a href="https://www.db-dvp.co.kr/business/fnb">
+        <svg viewBox="0 0 120 143"><path d="M28 50h48v38a24 24 0 0 1-24 24 24 24 0 0 1-24-24zM76 58h10a10 10 0 0 1 0 22H74M24 122h56M42 22c0 6 6 8 0 14M56 22c0 6 6 8 0 14M70 22c0 6 6 8 0 14"/></svg><span>F&amp;B</span></a></li>
+      <li><a href="https://www.db-dvp.co.kr/business/etc">
+        <svg viewBox="0 0 120 143"><circle cx="60" cy="72" r="14"/><path d="M60 30v14M60 100v14M24 72h14M82 72h14M35 47l10 10M75 87l10 10M85 47 75 57M45 87 35 97"/></svg><span>기타</span></a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- SECTION 4: PROJECTS -->
+<section class="sec4" id="projects">
+  <div class="row-warp">
+    <div class="sec-head reveal"><h1>주요 프로젝트</h1></div>
+    <div class="masonry">
+      <div class="col">
+        <a class="item reveal" href="https://www.db-dvp.co.kr/business/sell"><figure class="r-3-2"><img src="assets/img/p2.jpg" alt="" loading="lazy"></figure>
+          <h3>동탄역 대방 엘리움 더 시그니처</h3><p>동탄2신도시 동탄역 인근 주거용 오피스텔로, 대방 엘리움 브랜드를 적용했습니다.</p><span class="tag">#대방엘리움 #동탄2신도시 #오피스텔</span></a>
+        <a class="item reveal" href="https://www.db-dvp.co.kr/business/development"><figure class="r-3-4"><img src="assets/img/b2.jpg" alt="" loading="lazy"></figure>
+          <h3>개발 사업</h3><p>미래를 개발한다는 사명감으로 토지 확보부터 분양 후 관리까지 책임집니다.</p><span class="tag">#대방산업개발 #개발사업</span></a>
+      </div>
+      <div class="col">
+        <a class="item reveal" href="https://www.db-dvp.co.kr/business/sell"><figure class="r-4-3"><img src="assets/img/p3.jpg" alt="" loading="lazy"></figure>
+          <h3>시흥거모 대방 엘리움 더 루체</h3><p>시흥거모 S-2BL, B-2BL 1·2차 단지로, 고품격 주거문화를 담았습니다.</p><span class="tag">#대방엘리움 #시흥 #분양</span></a>
+        <a class="item reveal" href="https://www.db-dvp.co.kr/business/sell"><figure class="r-1-1"><img src="assets/img/p1.jpg" alt="" loading="lazy"></figure>
+          <h3>부산에코델타시티 2차 대방 엘리움</h3><p>부산 에코델타시티 29BL 단지로, 대방 엘리움 브랜드의 주거 공간을 선보입니다.</p><span class="tag">#대방엘리움 #부산 #분양</span></a>
+      </div>
+      <div class="col">
+        <a class="item reveal" href="https://www.db-dvp.co.kr/business/sell"><figure class="r-1-1"><img src="assets/img/p4.jpg" alt="" loading="lazy"></figure>
+          <h3>부산에코델타시티 1차 대방 엘리움</h3><p>부산 에코델타시티 31BL 단지로, 입주민의 일상을 먼저 생각했습니다.</p><span class="tag">#대방엘리움 #부산 #분양</span></a>
+        <a class="item reveal" href="https://www.db-dvp.co.kr/business/order"><figure class="r-3-2"><img src="assets/img/b1.jpg" alt="" loading="lazy"></figure>
+          <h3>수주 사업</h3><p>시대에 맞는 건축혁명을 이끌며 오피스텔, 아파트형 공장 등을 수주합니다.</p><span class="tag">#대방산업개발 #수주사업</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5: BANNER -->
+<section class="sec5">
+  <div class="bg" style="background-image:url(assets/img/hero3.jpg)"></div>
+  <div class="row-warp">
+    <h1 class="reveal">집에 대한 바른 생각,<br>대방산업개발이 새로운 가치를 만듭니다</h1>
+    <ul class="main-down reveal">
+      <li><a href="https://www.db-dvp.co.kr/company/ci"><i><svg viewBox="0 0 50 50"><rect x="9" y="6" width="26" height="36"/><path d="M15 15h14M15 22h14M15 29h8M38 30v14M31 37h14"/></svg></i><div><p>CI / BI 소개</p><span>바로가기</span></div></a></li>
+      <li><a href="https://www.db-dvp.co.kr/business/calendar"><i><svg viewBox="0 0 50 50"><rect x="7" y="11" width="36" height="31"/><path d="M7 20h36M16 6v10M34 6v10M15 28h6M15 35h6M25 28h6M25 35h6"/></svg></i><div><p>분양 캘린더</p><span>바로가기</span></div></a></li>
+      <li><a href="https://www.db-dvp.co.kr/recruit/apply"><i><svg viewBox="0 0 50 50"><circle cx="25" cy="16" r="8"/><path d="M9 43c1-10 8-15 16-15s15 5 16 15"/></svg></i><div><p>채용 공고</p><span>바로가기</span></div></a></li>
+    </ul>
+  </div>
+</section>
+
+</div>
 </main>
 
 <!-- FOOTER -->
-<footer class="ft">
-  <div class="wrap">
-    <ul class="ft__links">
-      <li><a href="#"><b>개인정보처리방침</b></a></li>
-      <li><a href="#">이용약관</a></li>
-      <li><a href="#">이메일무단수집거부</a></li>
-      <li><a href="#">고객문의</a></li>
+<footer class="footer">
+  <div class="row-warp">
+    <ul class="f-links">
+      <li><a href="https://www.db-dvp.co.kr/"><b>개인정보처리방침</b></a></li>
+      <li><a href="https://www.db-dvp.co.kr/">이용약관</a></li>
+      <li><a href="https://www.db-dvp.co.kr/">이메일무단수집거부</a></li>
+      <li><a href="https://www.db-dvp.co.kr/cs/customer">고객문의</a></li>
+      <li><a href="https://www.db-dvp.co.kr/recruit/apply">인재채용</a></li>
     </ul>
-    <div class="ft__row">
-      <div class="ft__info">
+    <div class="f-row">
+      <div class="f-info">
         <p>서울특별시 강서구 공항대로 248 대방빌딩 11층 &nbsp;|&nbsp; 대표이사 윤대인 &nbsp;|&nbsp; 사업자등록번호 128-81-73455</p>
         <p>T. 02-2181-4300 &nbsp;|&nbsp; F. 02-2181-9500</p>
-        <p class="ft__copy">© DAEBANG INDUSTRIAL DEVELOPMENT. ALL RIGHTS RESERVED.</p>
+        <p class="f-copy">© DAEBANG INDUSTRIAL DEVELOPMENT. ALL RIGHTS RESERVED.</p>
       </div>
-      <img class="ft__logo" src="assets/img/logo_kr_w.png" alt="대방산업개발">
+      <img class="f-logo" src="assets/img/logo_kr_w.png" alt="대방산업개발">
     </div>
   </div>
 </footer>
 
-<a class="top" id="top" href="#hero" aria-label="맨 위로"><img src="assets/img/ic_top.png" alt=""></a>
-<a class="tab" href="#news"><span>뉴스룸</span></a>
+<a class="to-top" id="toTop" href="#visual" aria-label="맨 위로"><i></i><span>TOP</span></a>
+<a class="news-tab" href="https://www.db-dvp.co.kr/pr/news"><span>뉴스룸</span></a>
 
 <script src="js/main.js"></script>
 </body>
