@@ -74,7 +74,7 @@ a{color:inherit;text-decoration:none}
 (function(){
   var L='ko';try{L=localStorage.getItem('lang')||'ko'}catch(e){}
   var b=document.getElementById('lang');
-  function apply(){document.documentElement.lang=L;b.textContent=L==='en'?'KO':'EN';
+  function apply(){document.documentElement.lang=L;b.textContent=L==='en'?'KR':'EN';
     [].forEach.call(document.querySelectorAll('[data-en]'),function(e){if(!e.hasAttribute('data-ko'))e.setAttribute('data-ko',e.innerHTML);e.innerHTML=L==='en'?e.getAttribute('data-en'):e.getAttribute('data-ko')})}
   b.onclick=function(){L=L==='en'?'ko':'en';try{localStorage.setItem('lang',L)}catch(e){}apply()};
   apply();
