@@ -27,13 +27,14 @@ a{color:inherit;text-decoration:none}
 .pane:hover .bg{transform:scale(1)}
 .gate:hover .pane:not(:hover) .bg{filter:brightness(.55) saturate(.8)}
 .pane::before{content:"";position:absolute;inset:0;z-index:1}
+.dvp .bg{transform:scale(1.9);transform-origin:38% 93%}.dvp:hover .bg{transform:scale(1.8)}
+.txt h2 .sub{display:block;margin-top:8px;font-family:Oswald,sans-serif;font-weight:300;font-size:26px;letter-spacing:.04em;text-transform:uppercase;opacity:.9}
+.eli .txt h2 .sub{color:#D5A67D;text-transform:none}
 .dvp::before{background:linear-gradient(180deg,rgba(18,40,90,.55),rgba(18,40,90,.2) 40%,rgba(10,22,52,.85))}
 .eli::before{background:linear-gradient(180deg,rgba(32,42,93,.5),rgba(32,42,93,.15) 40%,rgba(20,26,62,.88))}
 .txt{position:absolute;z-index:2;left:0;right:0;bottom:0;padding:0 56px 72px}
 .k{font-family:Oswald,sans-serif;font-weight:300;font-size:14px;letter-spacing:.24em;opacity:.85}
 .txt h2{margin:14px 0 14px;font-size:54px;font-weight:300;line-height:1.15;letter-spacing:-.05em}
-.eli .txt h2{font-family:Oswald,"Noto Sans KR",sans-serif;font-weight:300;letter-spacing:.01em}
-.eli .txt h2 em{font-style:normal;color:#D5A67D}
 .txt p{font-size:17px;font-weight:300;line-height:1.7;max-width:420px;opacity:.92}
 .go{display:inline-flex;align-items:center;gap:12px;margin-top:30px;font-size:15px;font-weight:400;padding-bottom:6px;border-bottom:1px solid rgba(255,255,255,.8)}
 .go i{font-style:normal;transition:transform .3s}
@@ -50,7 +51,7 @@ a{color:inherit;text-decoration:none}
   .top{height:64px;padding:0 20px}.top img{height:24px}
   .gate{flex-direction:column;height:auto;min-height:100%}
   .pane{flex:none;height:50vh;min-height:360px}.pane:hover{flex:none}
-  .txt{padding:0 24px 40px}.txt h2{font-size:34px}.txt p{font-size:15px}
+  .txt{padding:0 24px 40px}.txt h2{font-size:34px}.txt h2 .sub{font-size:18px}.txt p{font-size:15px}
   .div,.foot{display:none}
 }
 </style>
@@ -60,11 +61,11 @@ a{color:inherit;text-decoration:none}
 <main class="gate">
   <a class="pane dvp" href="dvp/" aria-label="대방산업개발 기업 홈페이지">
     <div class="bg" style="background-image:url(dvp/assets/ph/a4.jpg)"></div>
-    <div class="txt"><p class="k">CORPORATE</p><h2 data-en="Daebang<br>Industrial Development">대방산업개발</h2><p data-en="A comprehensive developer creating new value — housing, contracting, development and F&amp;B.">종합 부동산 디벨로퍼. 주택·분양, 수주, 개발, F&amp;B 사업과 지속가능경영, 인재채용을 소개합니다.</p><span class="go"><span data-en="Enter corporate site">기업 홈페이지 들어가기</span><i>→</i></span></div>
+    <div class="txt"><p class="k">CORPORATE</p><h2 data-en="Daebang Industrial Development<span class='sub'>대방산업개발</span>">대방산업개발<span class="sub">Daebang Industrial Development</span></h2><p data-en="A comprehensive developer creating new value — housing, contracting, development and F&amp;B.">종합 부동산 디벨로퍼. 주택·분양, 수주, 개발, F&amp;B 사업과 지속가능경영, 인재채용을 소개합니다.</p><span class="go"><span data-en="Enter corporate site">기업 홈페이지 들어가기</span><i>→</i></span></div>
   </a>
   <a class="pane eli" href="elium/" aria-label="대방 엘리움 브랜드 홈페이지">
     <div class="bg" style="background-image:url(elium/img/a3.jpg)"></div>
-    <div class="txt"><p class="k">RESIDENTIAL BRAND</p><h2>Daebang<br><em>Elium</em></h2><p data-en="Your Own Elysium — the residential brand of Daebang, and the places it builds.">Your Own Elysium. 대방산업개발의 주거 브랜드 엘리움과 단지를 만나보세요.</p><span class="go"><span data-en="Enter Elium site">엘리움 사이트 들어가기</span><i>→</i></span></div>
+    <div class="txt"><p class="k">RESIDENTIAL BRAND</p><h2 data-en="Daebang Elium<span class='sub'>대방 엘리움</span>">대방 엘리움<span class="sub">Daebang Elium</span></h2><p data-en="Your Own Elysium — the residential brand of Daebang, and the places it builds.">대방산업개발의 주거 브랜드 엘리움. Your Own Elysium, 단지와 브랜드 이야기를 만나보세요.</p><span class="go"><span data-en="Enter Elium site">엘리움 사이트 들어가기</span><i>→</i></span></div>
   </a>
   
 </main>
