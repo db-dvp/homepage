@@ -161,9 +161,6 @@ button{font:inherit;background:none;border:0;cursor:pointer;color:inherit}
 .to-top{position:fixed;right:30px;bottom:30px;z-index:90;width:58px;height:58px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#fff;border:2px solid var(--navy);color:var(--navy);font-size:10px;font-weight:700;line-height:1;gap:5px;opacity:0;visibility:hidden;transition:opacity .3s;box-shadow:0 4px 12px rgba(0,0,0,.18)}
 .to-top.on{opacity:1;visibility:visible}
 .to-top i{width:0;height:0;border:8px solid transparent;border-bottom:12px solid var(--navy);border-top:0}
-.news-tab{position:fixed;top:0;right:0;z-index:110;width:116px;height:116px;background:var(--navy);clip-path:polygon(0 0,100% 0,100% 100%);color:#fff;transition:background .3s}
-.news-tab:hover{background:var(--sky)}
-.news-tab span{position:absolute;right:14px;top:46px;font-size:13px;font-weight:700;transform:rotate(45deg)}
 
 /* responsive */
 @media(max-width:1200px){
@@ -209,8 +206,6 @@ button{font:inherit;background:none;border:0;cursor:pointer;color:inherit}
   .main-down li{width:100%}
   .f-row{flex-direction:column;align-items:flex-start}
   .full-in{grid-template-columns:repeat(2,1fr);padding-top:100px}
-  .news-tab{width:84px;height:84px}
-  .news-tab span{top:32px;right:8px;font-size:11px}
   .util{margin-right:64px}
   .main-policy{display:none}
   .scroll{margin-left:-16px}
