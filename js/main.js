@@ -5,7 +5,7 @@
 
   function onScroll(){
     var y=window.scrollY;
-    hd.classList.toggle('is-solid',y>80);
+    hd.classList.toggle('is-solid',y>80||document.body.classList.contains('is-sub'));
     toTop.classList.toggle('on',y>700);
   }
   window.addEventListener('scroll',onScroll,{passive:true});onScroll();
@@ -16,7 +16,7 @@
   // visual slider
   var slides=[].slice.call(document.querySelectorAll('.slide'));
   var cur=0;
-  setInterval(function(){
+  if(slides.length)setInterval(function(){
     slides[cur].classList.remove('on');
     cur=(cur+1)%slides.length;
     slides[cur].classList.add('on');
