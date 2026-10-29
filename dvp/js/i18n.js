@@ -4,7 +4,7 @@
   if(L!=='en')L='ko';
   window.LANG=L;document.documentElement.lang=L;if(L==='en')document.documentElement.classList.add('en');
   var btn=document.getElementById('langBtn');
-  if(btn){btn.textContent=L==='en'?'KO':'EN';btn.title=L==='en'?'한국어':'English';
+  if(btn){btn.textContent=L==='en'?'KR':'EN';btn.title=L==='en'?'한국어':'English';
     btn.addEventListener('click',function(){try{localStorage.setItem('lang',L==='en'?'ko':'en')}catch(e){}location.reload()})}
   if(L!=='en')return;
   var G=window.PAGES_EN.groups,order=['company','business','op','pr','recruit','cs'];
