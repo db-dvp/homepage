@@ -15,12 +15,11 @@
 
   // visual slider
   var slides=[].slice.call(document.querySelectorAll('.slide'));
-  var cur=0;
-  if(slides.length)setInterval(function(){
-    slides[cur].classList.remove('on');
-    cur=(cur+1)%slides.length;
-    slides[cur].classList.add('on');
-  },7000);
+  var cur=0,dots=[].slice.call(document.querySelectorAll('#vdots button')),tm;
+  function go(n){slides[cur].classList.remove('on');if(dots[cur])dots[cur].classList.remove('on');cur=(n+slides.length)%slides.length;slides[cur].classList.add('on');if(dots[cur])dots[cur].classList.add('on')}
+  function auto(){clearInterval(tm);if(slides.length)tm=setInterval(function(){go(cur+1)},7000)}
+  dots.forEach(function(d,i){d.addEventListener('click',function(){go(i);auto()})});
+  auto();
 
   // full menu
   var full=document.getElementById('full');
