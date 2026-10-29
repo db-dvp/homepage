@@ -17,7 +17,7 @@ body{font-family:"Noto Sans KR","Malgun Gothic",sans-serif;background:#0b1530;co
 a{color:inherit;text-decoration:none}
 .top{position:fixed;z-index:5;top:0;left:0;right:0;height:84px;padding:0 40px;display:flex;align-items:center;justify-content:space-between;pointer-events:none}
 .top>*{pointer-events:auto}
-.top img{height:30px;opacity:.95}
+.top img{height:44px;opacity:.95}
 .lang{font-family:Oswald,sans-serif;font-size:14px;letter-spacing:.06em;height:30px;padding:0 14px;border:1px solid rgba(255,255,255,.7);border-radius:15px;background:none;color:#fff;cursor:pointer}
 .lang:hover{background:#fff;color:#1c407d}
 .gate{display:flex;height:100%}
@@ -27,7 +27,7 @@ a{color:inherit;text-decoration:none}
 .pane:hover .bg{transform:scale(1)}
 .gate:hover .pane:not(:hover) .bg{filter:brightness(.55) saturate(.8)}
 .pane::before{content:"";position:absolute;inset:0;z-index:1}
-.dvp .bg{transform:scale(1.9);transform-origin:38% 93%}.dvp:hover .bg{transform:scale(1.8)}
+.dvp .bg{background-position:50% 30%}
 .txt h2 .sub{display:block;margin-top:8px;font-family:Oswald,sans-serif;font-weight:300;font-size:26px;letter-spacing:.04em;text-transform:uppercase;opacity:.9}
 .eli .txt h2 .sub{color:#D5A67D;text-transform:none}
 .dvp::before{background:linear-gradient(180deg,rgba(18,40,90,.55),rgba(18,40,90,.2) 40%,rgba(10,22,52,.85))}
@@ -48,7 +48,7 @@ a{color:inherit;text-decoration:none}
 @keyframes up{to{opacity:1;transform:none}}
 @media(max-width:800px){
   body{overflow:auto}
-  .top{height:64px;padding:0 20px}.top img{height:24px}
+  .top{height:64px;padding:0 20px}.top img{height:34px}
   .gate{flex-direction:column;height:auto;min-height:100%}
   .pane{flex:none;height:50vh;min-height:360px}.pane:hover{flex:none}
   .txt{padding:0 24px 40px}.txt h2{font-size:34px}.txt h2 .sub{font-size:18px}.txt p{font-size:15px}
@@ -57,10 +57,10 @@ a{color:inherit;text-decoration:none}
 </style>
 </head>
 <body>
-<div class="top"><img src="dvp/assets/img/logo_kr_w.png" alt="대방산업개발"><button class="lang" id="lang" type="button">EN</button></div>
+<div class="top"><img src="dvp/assets/img/logo_en_w.png" alt="DAEBANG INDUSTRIAL DEVELOPMENT"><button class="lang" id="lang" type="button">EN</button></div>
 <main class="gate">
   <a class="pane dvp" href="dvp/" aria-label="대방산업개발 기업 홈페이지">
-    <div class="bg" style="background-image:url(dvp/assets/ph/a4.jpg)"></div>
+    <div class="bg" style="background-image:url(dvp/assets/ph/tower.jpg)"></div>
     <div class="txt"><p class="k">CORPORATE</p><h2 data-en="Daebang Industrial Development<span class='sub'>대방산업개발</span>">대방산업개발<span class="sub">Daebang Industrial Development</span></h2><p data-en="A comprehensive developer creating new value — housing, contracting, development and F&amp;B.">종합 부동산 디벨로퍼. 주택·분양, 수주, 개발, F&amp;B 사업과 지속가능경영, 인재채용을 소개합니다.</p><span class="go"><span data-en="Enter corporate site">기업 홈페이지 들어가기</span><i>→</i></span></div>
   </a>
   <a class="pane eli" href="elium/" aria-label="대방 엘리움 브랜드 홈페이지">
