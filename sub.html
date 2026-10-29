@@ -13,6 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Oswald:wght@300;400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/sub.css">
+<link rel="stylesheet" href="css/extra.css">
 <script>document.documentElement.className+=' js'</script>
 </head>
 <body class="is-sub">
@@ -42,8 +43,8 @@
         </ul>
       </nav>
       <div class="util">
-        <a class="util-en" href="#">EN</a>
-        <button class="util-btn" aria-label="검색"><img src="assets/img/ic_search.png" alt=""></button>
+        <button class="util-en" id="langBtn" type="button" aria-label="English / 한국어">EN</button>
+        <button class="util-btn" id="srchBtn" aria-label="검색" data-en-aria="Search"><img src="assets/img/ic_search.png" alt=""></button>
         <button class="util-btn util-menu" id="menuBtn" aria-label="전체메뉴"><span></span><span></span><span></span></button>
       </div>
     </div>
@@ -65,7 +66,7 @@
 </div>
 
 <main id="content">
-<div class="sub-visual"><div class="row-warp"><p class="crumb" id="crumb"></p><h1 id="ttl"></h1></div></div>
+<div class="sub-visual" id="subvis"><div class="sv-bg" id="svbg"></div><div class="row-warp"><p class="crumb" id="crumb"></p><h1 id="ttl"></h1></div></div>
 <nav class="sub-tab" id="tabs" aria-label="하위 메뉴"><div class="row-warp"></div></nav>
 <div class="sub-body"><div class="row-warp" id="body"></div></div>
 </main>
@@ -79,9 +80,13 @@
       <li><a href="sub.html?p=cs/customer">고객문의</a></li>
       <li><a href="sub.html?p=recruit/apply">인재채용</a></li>
     </ul>
+    <div class="fam"><span data-en="FAMILY SITE">관련 사이트</span>
+        <a href="https://www.dbcons.co.kr/" target="_blank" rel="noopener" data-en="Daebang E&amp;C">대방건설</a>
+        <a href="https://daebang.recruiter.co.kr" target="_blank" rel="noopener" data-en="Careers">채용사이트</a>
+        <a href="https://www.db-dvp.co.kr/" target="_blank" rel="noopener" data-en="Original site">기존 홈페이지</a></div>
     <div class="f-row">
       <div class="f-info">
-        <p>서울특별시 강서구 공항대로 248 대방빌딩 11층 &nbsp;|&nbsp; 대표이사 윤대인 &nbsp;|&nbsp; 사업자등록번호 128-81-73455</p>
+        <p data-en="11F Daebang Bldg., 248 Gonghang-daero, Gangseo-gu, Seoul &nbsp;|&nbsp; CEO Yoon Dae-in &nbsp;|&nbsp; Business Reg. No. 128-81-73455">서울특별시 강서구 공항대로 248 대방빌딩 11층 &nbsp;|&nbsp; 대표이사 윤대인 &nbsp;|&nbsp; 사업자등록번호 128-81-73455</p>
         <p>T. 02-2181-4300 &nbsp;|&nbsp; F. 02-2181-9500</p>
         <p class="f-copy">© DAEBANG INDUSTRIAL DEVELOPMENT. ALL RIGHTS RESERVED.</p>
       </div>
@@ -93,7 +98,10 @@
 <a class="to-top" id="toTop" href="#content" aria-label="맨 위로"><i></i><span>TOP</span></a>
 
 <script src="js/pages.js"></script>
+<script src="js/pages_en.js"></script>
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 <script src="js/sub.js"></script>
+<script src="js/search.js"></script>
 </body>
 </html>
