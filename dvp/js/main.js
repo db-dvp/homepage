@@ -16,7 +16,7 @@
   // visual slider
   var slides=[].slice.call(document.querySelectorAll('.slide'));
   var cur=0,dots=[].slice.call(document.querySelectorAll('#vdots button')),tm;
-  function go(n){slides[cur].classList.remove('on');if(dots[cur])dots[cur].classList.remove('on');cur=(n+slides.length)%slides.length;slides[cur].classList.add('on');if(dots[cur])dots[cur].classList.add('on')}
+  function go(n){slides.forEach(function(s){s.classList.remove('prev')});slides[cur].classList.add('prev');slides[cur].classList.remove('on');if(dots[cur])dots[cur].classList.remove('on');cur=(n+slides.length)%slides.length;slides[cur].classList.add('on');if(dots[cur])dots[cur].classList.add('on')}
   function auto(){clearInterval(tm);if(slides.length)tm=setInterval(function(){go(cur+1)},7000)}
   dots.forEach(function(d,i){d.addEventListener('click',function(){go(i);auto()})});
   auto();
