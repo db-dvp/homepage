@@ -184,7 +184,7 @@ button{font:inherit;background:none;border:0;cursor:pointer;color:inherit}
 }
 @media(max-width:760px){
   :root{--hd:64px}
-  .logo{width:128px}
+  .logo{width:auto}
   .sec1{padding:56px 0 40px}
   .sec1 h1{font-size:30px}
   .sec1 p{font-size:16px}
