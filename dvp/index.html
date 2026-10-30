@@ -13,6 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Oswald:wght@300;400&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/extra.css">
+<link rel="stylesheet" href="css/layout.css">
 <script>document.documentElement.className+=' js'</script>
 </head>
 <body>
@@ -28,18 +29,16 @@
       </a>
       <nav class="gnb" aria-label="주 메뉴">
         <ul>
-          <li><a href="sub.html?p=company/overview">회사소개</a>
-            <div class="sub"><a href="sub.html?p=company/overview">회사개요</a><a href="sub.html?p=company/ceo">CEO 인사말</a><a href="sub.html?p=company/philosophy">경영이념</a><a href="sub.html?p=company/history_a">연혁</a><a href="sub.html?p=company/ci">CI / BI 소개</a><a href="sub.html?p=company/contact">오시는 길</a></div></li>
-          <li><a href="sub.html?p=business/calendar">사업영역</a>
-            <div class="sub"><a href="sub.html?p=business/calendar">분양 캘린더</a><a href="sub.html?p=business/sell">주택 / 분양사업</a><a href="sub.html?p=business/order">수주 사업</a><a href="sub.html?p=business/development">개발 사업</a><a href="sub.html?p=business/fnb">F&amp;B 사업</a><a href="sub.html?p=business/etc">기타 사업</a></div></li>
-          <li><a href="sub.html?p=op/quality">지속가능경영</a>
-            <div class="sub"><a href="sub.html?p=op/quality">품질경영</a><a href="sub.html?p=op/ethics">윤리경영</a><a href="sub.html?p=op/social">사회공헌</a><a href="sub.html?p=op/winwin">상생경영</a><a href="sub.html?p=op/safe">안전/보건경영</a></div></li>
-          <li><a href="sub.html?p=pr/news">홍보센터</a>
-            <div class="sub"><a href="sub.html?p=pr/news">뉴스</a><a href="sub.html?p=pr/media">언론 속 대방</a></div></li>
-          <li><a href="sub.html?p=recruit/recruit">인재채용</a>
-            <div class="sub"><a href="sub.html?p=recruit/recruit">인재상</a><a href="sub.html?p=recruit/system">인사제도</a><a href="sub.html?p=recruit/process">채용절차</a><a href="sub.html?p=recruit/apply">공고 및 지원</a></div></li>
-          <li><a href="sub.html?p=cs/guide">고객지원</a>
-            <div class="sub"><a href="sub.html?p=cs/guide">고객지원 안내</a><a href="sub.html?p=cs/faq">FAQ</a><a href="sub.html?p=cs/wish">관심고객등록</a><a href="sub.html?p=cs/customer">고객문의</a><a href="sub.html?p=cs/flaw">하자문의</a></div></li>
+          <li><a href="sub.html?p=company/about">COMPANY</a>
+            <div class="sub"><a href="sub.html?p=company/about">소개</a><a href="sub.html?p=company/ceo">CEO 인사말</a><a href="sub.html?p=company/history">연혁</a></div></li>
+          <li><a href="sub.html?p=pr/news">PR/ESG</a>
+            <div class="sub"><a href="sub.html?p=pr/news">뉴스</a><a href="sub.html?p=pr/esg">ESG 경영</a></div></li>
+          <li><a href="sub.html?p=brand/story">BRAND</a>
+            <div class="sub"><a href="sub.html?p=brand/story">브랜드 스토리</a><a href="sub.html?p=brand/projects">프로젝트</a><a href="sub.html?p=brand/daebang">대방 [ ]장</a><a href="sub.html?p=brand/ci">BI/CI</a></div></li>
+          <li><a href="sub.html?p=career/jobs">CAREER</a>
+            <div class="sub"><a href="sub.html?p=career/jobs">채용공고</a><a href="sub.html?p=career/benefits">복리후생</a></div></li>
+          <li><a href="sub.html?p=cs/faq">CUSTOMER</a>
+            <div class="sub"><a href="sub.html?p=cs/faq">FAQ</a><a href="sub.html?p=cs/as">A/S 문의</a></div></li>
         </ul>
       </nav>
       <div class="util">
@@ -49,19 +48,18 @@
       </div>
     </div>
   </div>
-  <div class="gnb-bg"></div>
+  <div class="gnb-bg"><div class="gnb-photo" aria-hidden="true"><img src="assets/ph/a2.jpg" alt=""><b>대방산업개발</b><span>집에 대한 바른 생각</span></div></div>
 </header>
 
 <!-- FULL MENU -->
 <div class="full" id="full" aria-hidden="true">
   <button class="full-x" id="fullX" aria-label="닫기"></button>
   <div class="full-in">
-    <dl><dt>회사소개</dt><dd><a href="sub.html?p=company/overview">회사개요</a><a href="sub.html?p=company/ceo">CEO 인사말</a><a href="sub.html?p=company/philosophy">경영이념</a><a href="sub.html?p=company/history_a">연혁</a><a href="sub.html?p=company/ci">CI / BI 소개</a><a href="sub.html?p=company/contact">오시는 길</a></dd></dl>
-    <dl><dt>사업영역</dt><dd><a href="sub.html?p=business/calendar">분양 캘린더</a><a href="sub.html?p=business/sell">주택 / 분양사업</a><a href="sub.html?p=business/order">수주 사업</a><a href="sub.html?p=business/development">개발 사업</a><a href="sub.html?p=business/fnb">F&amp;B 사업</a><a href="sub.html?p=business/etc">기타 사업</a></dd></dl>
-    <dl><dt>지속가능경영</dt><dd><a href="sub.html?p=op/quality">품질경영</a><a href="sub.html?p=op/ethics">윤리경영</a><a href="sub.html?p=op/social">사회공헌</a><a href="sub.html?p=op/winwin">상생경영</a><a href="sub.html?p=op/safe">안전/보건경영</a></dd></dl>
-    <dl><dt>홍보센터</dt><dd><a href="sub.html?p=pr/news">뉴스</a><a href="sub.html?p=pr/media">언론 속 대방</a></dd></dl>
-    <dl><dt>인재채용</dt><dd><a href="sub.html?p=recruit/recruit">인재상</a><a href="sub.html?p=recruit/system">인사제도</a><a href="sub.html?p=recruit/process">채용절차</a><a href="sub.html?p=recruit/apply">공고 및 지원</a></dd></dl>
-    <dl><dt>고객지원</dt><dd><a href="sub.html?p=cs/guide">고객지원 안내</a><a href="sub.html?p=cs/faq">FAQ</a><a href="sub.html?p=cs/wish">관심고객등록</a><a href="sub.html?p=cs/customer">고객문의</a><a href="sub.html?p=cs/flaw">하자문의</a></dd></dl>
+    <dl><dt>COMPANY</dt><dd><a href="sub.html?p=company/about">소개</a><a href="sub.html?p=company/ceo">CEO 인사말</a><a href="sub.html?p=company/history">연혁</a></dd></dl>
+    <dl><dt>PR/ESG</dt><dd><a href="sub.html?p=pr/news">뉴스</a><a href="sub.html?p=pr/esg">ESG 경영</a></dd></dl>
+    <dl><dt>BRAND</dt><dd><a href="sub.html?p=brand/story">브랜드 스토리</a><a href="sub.html?p=brand/projects">프로젝트</a><a href="sub.html?p=brand/daebang">대방 [ ]장</a><a href="sub.html?p=brand/ci">BI/CI</a></dd></dl>
+    <dl><dt>CAREER</dt><dd><a href="sub.html?p=career/jobs">채용공고</a><a href="sub.html?p=career/benefits">복리후생</a></dd></dl>
+    <dl><dt>CUSTOMER</dt><dd><a href="sub.html?p=cs/faq">FAQ</a><a href="sub.html?p=cs/as">A/S 문의</a></dd></dl>
   </div>
 </div>
 
@@ -70,10 +68,10 @@
 <!-- VISUAL -->
 <div class="main-visual" id="visual">
   <div class="slides">
-    <div class="slide on" style="background-image:url(assets/ph/a2.jpg)"><div class="cap"><p class="k">DAEBANG INDUSTRIAL DEVELOPMENT</p><h2 data-en="Creating new value,<br>building happier lives">새로운 가치를 창조하는<br>대방산업개발</h2><a href="sub.html?p=company/overview" data-en="About us">회사소개 보기</a></div></div>
+    <div class="slide on" style="background-image:url(assets/ph/a2.jpg)"><div class="cap"><p class="k">DAEBANG INDUSTRIAL DEVELOPMENT</p><h2 data-en="Creating new value,<br>building happier lives">새로운 가치를 창조하는<br>대방산업개발</h2><a href="sub.html?p=company/about" data-en="About us">회사소개 보기</a></div></div>
     <div class="slide" style="background-image:url(assets/ph/a3.jpg);background-position:50% 22%"><div class="cap"><p class="k">ELIUM · DMCITY</p><h2 data-en="Your Own Elysium,<br>Daebang Elium">Your Own Elysium,<br>대방 엘리움</h2><a href="../elium/" data-en="Visit Elium site">엘리움 사이트 가기</a></div></div>
-    <div class="slide" style="background-image:url(assets/ph/a5.jpg);background-position:50% 35%"><div class="cap"><p class="k">HOUSING · SALES</p><h2 data-en="Homes that elevate<br>everyday life">일상의 품격을 높이는<br>주거 공간</h2><a href="sub.html?p=business/sell" data-en="View housing projects">분양 사업 보기</a></div></div>
-    <div class="slide" style="background-image:url(assets/ph/a6.jpg);background-position:50% 62%"><div class="cap"><p class="k">DEVELOPER</p><h2 data-en="From land to living,<br>one developer">택지에서 입주까지<br>종합 부동산 디벨로퍼</h2><a href="sub.html?p=business/development" data-en="View development">개발사업 보기</a></div></div>
+    <div class="slide" style="background-image:url(assets/ph/a5.jpg);background-position:50% 35%"><div class="cap"><p class="k">HOUSING · SALES</p><h2 data-en="Homes that elevate<br>everyday life">일상의 품격을 높이는<br>주거 공간</h2><a href="sub.html?p=brand/projects#s-business-sell" data-en="View housing projects">분양 사업 보기</a></div></div>
+    <div class="slide" style="background-image:url(assets/ph/a6.jpg);background-position:50% 62%"><div class="cap"><p class="k">DEVELOPER</p><h2 data-en="From land to living,<br>one developer">택지에서 입주까지<br>종합 부동산 디벨로퍼</h2><a href="sub.html?p=brand/projects#s-business-development" data-en="View development">개발사업 보기</a></div></div>
       </div>
   <div class="vdots" id="vdots"><button class="on" aria-label="1"></button><button aria-label="2"></button><button aria-label="3"></button><button aria-label="4"></button></div>
   <span class="scroll" aria-hidden="true"><i></i></span>
@@ -82,120 +80,26 @@
 
 <div class="content-box">
 
-<!-- SECTION 1 -->
-<section class="sec1">
+<!-- BRAND SLOGAN -->
+<section class="m-brand">
   <div class="row-warp">
-    <h1 class="reveal" data-en="Daebang Industrial Development creates new value">대방산업개발은 새로운 가치를 창조합니다</h1>
-    <p class="reveal" data-en="Our customers’ happy future is our future. We build premium living culture, lead architecture for the times, and develop tomorrow.">고객의 행복한 미래가 대방산업개발의 미래입니다.<br class="m-none"> 고품격 주거문화를 만들고, 시대에 맞는 건축을 이끌며, 미래를 개발합니다.</p>
-    <div class="count-warp reveal">
-      <dl>
-        <dt><span>설립<br>2002년부터<br>현재까지</span>
-          <svg class="count-icon" viewBox="0 0 127 100"><g class="l"><rect x="38" y="44" width="30" height="50"/><rect x="72" y="22" width="34" height="72"/><path d="M30 94h86M46 54h14M46 64h14M46 74h14M80 32h18M80 42h18M80 52h18M80 62h18M80 72h18"/></g><g class="p"><path d="M20 18h22v16H20z"/><path d="M20 24h22M26 14v6M36 14v6"/></g></svg></dt>
-        <dd><strong data-to="24">0</strong><span>주년</span></dd>
-      </dl>
-      <dl>
-        <dt><span>사업<br>영역</span>
-          <svg class="count-icon" viewBox="0 0 127 100"><g class="l"><rect x="30" y="18" width="30" height="30"/><rect x="66" y="18" width="30" height="30"/><rect x="30" y="54" width="30" height="30"/><rect x="66" y="54" width="30" height="30"/></g><g class="p"><path d="M38 30h14M38 38h14M74 30h14M74 38h14M38 66h14M74 66h14M74 74h14"/><circle cx="45" cy="72" r="5"/></g></svg></dt>
-        <dd><strong data-to="5">0</strong><span>개</span></dd>
-      </dl>
-      <dl>
-        <dt><span>대표<br>브랜드</span>
-          <svg class="count-icon" viewBox="0 0 127 100"><g class="l"><path d="M50 94V40l14-12 14 12v54M30 94h66"/><path d="M78 94V54l12-10 12 10v40"/></g><g class="p"><path d="M64 8l3 7 8 1-6 5 2 8-7-4-7 4 2-8-6-5 8-1z"/><path d="M58 52h12M58 62h12M58 72h12M84 64h12M84 74h12"/></g></svg></dt>
-        <dd><strong data-to="2">0</strong><span>개</span></dd>
-      </dl>
-      <dl>
-        <dt><span>분양<br>정보<br>단지</span>
-          <svg class="count-icon" viewBox="0 0 127 100"><g class="l"><path d="M24 30l24-8 26 10 28-10v52l-28 10-26-10-24 8z"/><path d="M48 22v52M74 32v52"/></g><g class="p"><path d="M62 12c-8 0-14 6-14 13 0 10 14 26 14 26s14-16 14-26c0-7-6-13-14-13z"/><circle cx="62" cy="25" r="5"/></g></svg></dt>
-        <dd><strong data-to="4">0</strong><span>개</span></dd>
-      </dl>
-    </div>
+    <div class="m-brand-h reveal"><p class="k">BRAND SLOGAN</p><h1 data-en="The right idea<br>of home">집에 대한<br>바른 생각</h1></div>
+    <div class="m-brand-t reveal"><p class="lead" data-en="Daebang Industrial Development creates new value">대방산업개발은 새로운 가치를 창조합니다</p><p data-en="Our customers’ happy future is our future. We build premium living culture, lead architecture for the times, and develop tomorrow.">고객의 행복한 미래가 대방산업개발의 미래입니다.<br class="m-none"> 고품격 주거문화를 만들고, 시대에 맞는 건축을 이끌며, 미래를 개발합니다.</p><a class="m-btn" href="sub.html?p=company/about" data-en="About us">회사소개 보기</a></div>
+    <figure class="m-brand-img reveal"><img src="assets/ph/a3.jpg" alt="" loading="lazy"></figure>
   </div>
 </section>
 
-<!-- SECTION 2: NEWS -->
-<section class="sec2" id="news">
+<!-- PROJECTS -->
+<section class="m-proj" id="projects">
   <div class="row-warp">
-    <div class="sec-head reveal"><h1 data-en="Press Releases">보도자료</h1><a class="more" href="sub.html?p=pr/news">+ more</a></div>
-    <ul class="news-cards reveal">
-      <li><a href="https://www.db-dvp.co.kr/pr/news-detail/586?type=all" target="_blank" rel="noopener"><figure><img src="assets/ph/n1.jpg" alt="" loading="lazy"></figure><span class="date">2026.10.20</span><strong>대방산업개발, '2026 마인드런 페스티벌' 공식 협찬</strong></a></li>
-      <li><a href="https://www.db-dvp.co.kr/pr/news-detail/585?type=all" target="_blank" rel="noopener"><figure><img src="assets/ph/n2.jpg" alt="" loading="lazy"></figure><span class="date">2026.10.16</span><strong>대방산업개발, '아이스버그골프·서울신문 오픈' 협찬</strong></a></li>
-      <li><a href="https://www.db-dvp.co.kr/pr/news-detail/579?type=all" target="_blank" rel="noopener"><figure><img src="assets/ph/n3.jpg" alt="" loading="lazy"></figure><span class="date">2026.10.14</span><strong>대방산업개발 강명식 차장, 산업재해예방 국무총리 표창</strong></a></li>
-      <li><a href="https://www.db-dvp.co.kr/pr/news-detail/571?type=all" target="_blank" rel="noopener"><figure><img src="assets/ph/a7.jpg" alt="" loading="lazy"></figure><span class="date">2026.03.17</span><strong>대방산업개발, '올해의 조경 명작' 〈향기 향〉상 수상</strong></a></li>
-    </ul>
-  </div>
-</section>
-
-<!-- SECTION 3: BUSINESS -->
-<section class="sec3p" id="business">
-  <div class="row-warp"><div class="sec-head reveal"><h1 data-en="Business Areas">사업영역</h1><a class="more" href="sub.html?p=business/sell">+ more</a></div></div>
-  <ul class="panels reveal">
-    <li style="background-image:url(assets/ph/a3.jpg);background-position:50% 22%"><a href="sub.html?p=business/sell"><em>HOUSING</em><b data-en="Housing · Sales">주택 · 분양</b><span data-en="Premium residences under the Elium brand">‘대방엘리움’ 브랜드의 고품격 주거문화</span></a></li>
-    <li style="background-image:url(assets/ph/c4.jpg)"><a href="sub.html?p=business/order"><em>ORDER</em><b data-en="Contracting">수주</b><span data-en="Offices, factories and more">오피스텔·아파트형 공장 등 복합 공간 시공</span></a></li>
-    <li style="background-image:url(assets/ph/dev.jpg)"><a href="sub.html?p=business/development"><em>DEVELOPMENT</em><b data-en="Development">개발</b><span data-en="From land purchase to after-service">택지 매입부터 사후관리까지 전 과정</span></a></li>
-    <li style="background-image:url(assets/ph/f1.jpg)"><a href="sub.html?p=business/fnb"><em>F&amp;B</em><b>F&amp;B</b><span data-en="Coffee &amp; Bakery, DAE BANG [ ] JANG">커피 &amp; 베이커리 ‘대방[ ]장’</span></a></li>
-    <li style="background-image:url(assets/ph/c1.jpg)"><a href="sub.html?p=business/etc"><em>ETC</em><b data-en="Others">기타</b><span data-en="Scaffolding rental, leasing">가설재 임대 · 임대사업</span></a></li>
-  </ul>
-</section>
-
-<!-- SECTION 4: PROJECTS -->
-<section class="sec4" id="projects">
-  <div class="row-warp">
-    <div class="sec-head reveal"><h1 data-en="Major Projects">주요 프로젝트</h1></div>
-    <div class="masonry">
-      <div class="col">
-        <a class="item reveal" href="sub.html?p=business/sell"><figure class="r-3-2"><img src="assets/img/p2.jpg" alt="" loading="lazy"></figure>
-          <h3>동탄역 대방 엘리움 더 시그니처</h3><p>동탄2신도시 동탄역 인근 주거용 오피스텔로, 대방 엘리움 브랜드를 적용했습니다.</p><span class="tag">#대방엘리움 #동탄2신도시 #오피스텔</span></a>
-        <a class="item reveal" href="sub.html?p=business/development"><figure class="r-3-4"><img src="assets/img/b2.jpg" alt="" loading="lazy"></figure>
-          <h3>개발 사업</h3><p>미래를 개발한다는 사명감으로 토지 확보부터 분양 후 관리까지 책임집니다.</p><span class="tag">#대방산업개발 #개발사업</span></a>
-      </div>
-      <div class="col">
-        <a class="item reveal" href="sub.html?p=business/sell"><figure class="r-4-3"><img src="assets/img/p3.jpg" alt="" loading="lazy"></figure>
-          <h3>시흥거모 대방 엘리움 더 루체</h3><p>시흥거모 S-2BL, B-2BL 1·2차 단지로, 고품격 주거문화를 담았습니다.</p><span class="tag">#대방엘리움 #시흥 #분양</span></a>
-        <a class="item reveal" href="sub.html?p=business/sell"><figure class="r-1-1"><img src="assets/img/p1.jpg" alt="" loading="lazy"></figure>
-          <h3>부산에코델타시티 2차 대방 엘리움</h3><p>부산 에코델타시티 29BL 단지로, 대방 엘리움 브랜드의 주거 공간을 선보입니다.</p><span class="tag">#대방엘리움 #부산 #분양</span></a>
-      </div>
-      <div class="col">
-        <a class="item reveal" href="sub.html?p=business/sell"><figure class="r-1-1"><img src="assets/img/p4.jpg" alt="" loading="lazy"></figure>
-          <h3>부산에코델타시티 1차 대방 엘리움</h3><p>부산 에코델타시티 31BL 단지로, 입주민의 일상을 먼저 생각했습니다.</p><span class="tag">#대방엘리움 #부산 #분양</span></a>
-        <a class="item reveal" href="sub.html?p=business/order"><figure class="r-3-2"><img src="assets/img/b1.jpg" alt="" loading="lazy"></figure>
-          <h3>수주 사업</h3><p>시대에 맞는 건축혁명을 이끌며 오피스텔, 아파트형 공장 등을 수주합니다.</p><span class="tag">#대방산업개발 #수주사업</span></a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- GALLERY -->
-<section class="gal">
-  <div class="row-warp"><div class="sec-head reveal"><h1 data-en="Gallery">갤러리</h1><a class="more" href="sub.html?p=business/sell">+ more</a></div></div>
-  <div class="marq"><div class="track">
-<img src="assets/ph/a5.jpg" alt="" loading="lazy"><img src="assets/ph/g1.jpg" alt="" loading="lazy"><img src="assets/ph/a6.jpg" alt="" loading="lazy"><img src="assets/ph/a2.jpg" alt="" loading="lazy"><img src="assets/ph/u4.jpg" alt="" loading="lazy"><img src="assets/ph/g5.jpg" alt="" loading="lazy"><img src="assets/ph/a7.jpg" alt="" loading="lazy"><img src="assets/ph/g2.jpg" alt="" loading="lazy"><img src="assets/ph/a3.jpg" alt="" loading="lazy"><img src="assets/ph/g6.jpg" alt="" loading="lazy"><img src="assets/ph/g4.jpg" alt="" loading="lazy"><img src="assets/ph/a2.jpg" alt="" loading="lazy"><img src="assets/ph/g7.jpg" alt="" loading="lazy"><img src="assets/ph/g8.jpg" alt="" loading="lazy">
-  </div></div>
-</section>
-
-<!-- PHILOSOPHY -->
-<section class="phil" style="background-image:url(assets/ph/u5.jpg)">
-  <div class="row-warp reveal">
-    <p class="k">PHILOSOPHY</p>
-    <h1 data-en="Honesty · Unity · Originality">정직성실 · 일심화합 · 창의개발</h1>
-    <ul>
-      <li><b>HONESTY &amp; INTEGRITY</b><span data-en="We keep our promises to customers, society and employees as dearly as life itself.">고객·사회·직원과의 약속을 생명처럼 소중히</span></li>
-      <li><b>UNITY &amp; HARMONY</b><span data-en="Every member works toward one goal: customer satisfaction.">모든 구성원이 고객만족이라는 하나의 목표로</span></li>
-      <li><b>ORIGINALITY &amp; DEVELOPMENT</b><span data-en="Creative technology and new-tech education build competitiveness.">창의적 기술력으로 경쟁력을 높입니다</span></li>
-    </ul>
-    <a class="go" href="sub.html?p=company/philosophy" data-en="Read more">경영이념 보기</a>
-  </div>
-</section>
-
-<!-- SECTION 5: BANNER -->
-<section class="sec5">
-  <div class="bg" style="background-image:url(assets/ph/a3.jpg);background-position:50% 22%"></div>
-  <div class="row-warp">
-    <h1 class="reveal" data-en="The right idea of home —<br>new value from Daebang">집에 대한 바른 생각,<br>대방산업개발이 새로운 가치를 만듭니다</h1>
-    <ul class="main-down reveal">
-      <li><a href="sub.html?p=company/ci"><i><svg viewBox="0 0 50 50"><rect x="9" y="6" width="26" height="36"/><path d="M15 15h14M15 22h14M15 29h8M38 30v14M31 37h14"/></svg></i><div><p>CI / BI 소개</p><span>바로가기</span></div></a></li>
-      <li><a href="sub.html?p=business/calendar"><i><svg viewBox="0 0 50 50"><rect x="7" y="11" width="36" height="31"/><path d="M7 20h36M16 6v10M34 6v10M15 28h6M15 35h6M25 28h6M25 35h6"/></svg></i><div><p>분양 캘린더</p><span>바로가기</span></div></a></li>
-      <li><a href="https://daebang.recruiter.co.kr" target="_blank" rel="noopener"><i><svg viewBox="0 0 50 50"><circle cx="25" cy="16" r="8"/><path d="M9 43c1-10 8-15 16-15s15 5 16 15"/></svg></i><div><p>채용 공고</p><span>바로가기</span></div></a></li>
+    <div class="m-proj-h reveal"><h1 data-en="Stories Behind<br>Our Projects">주요 프로젝트</h1><a class="m-btn" href="sub.html?p=brand/projects" data-en="View projects">프로젝트 바로가기</a></div>
+    <ul class="m-proj-list reveal">
+      <li><a href="sub.html?p=brand/projects#s-business-sell"><img src="assets/img/p2.jpg" alt="" loading="lazy"><b data-en="Dongtan Station Daebang Elium The Signature">동탄역 대방 엘리움 더 시그니처</b><span>#대방엘리움 #동탄2신도시 #오피스텔</span></a></li>
+      <li><a href="sub.html?p=brand/projects#s-business-sell"><img src="assets/img/p3.jpg" alt="" loading="lazy"><b data-en="Siheung Geomo Daebang Elium The Luce">시흥거모 대방 엘리움 더 루체</b><span>#대방엘리움 #시흥 #분양</span></a></li>
+      <li><a href="sub.html?p=brand/projects#s-business-sell"><img src="assets/img/p4.jpg" alt="" loading="lazy"><b data-en="Busan Eco Delta City Phase 1 Daebang Elium">부산에코델타시티 1차 대방 엘리움</b><span>#대방엘리움 #부산 #분양</span></a></li>
+      <li><a href="sub.html?p=brand/projects#s-business-sell"><img src="assets/img/p1.jpg" alt="" loading="lazy"><b data-en="Busan Eco Delta City Phase 2 Daebang Elium">부산에코델타시티 2차 대방 엘리움</b><span>#대방엘리움 #부산 #분양</span></a></li>
+      <li><a href="sub.html?p=brand/projects#s-business-development"><img src="assets/img/b2.jpg" alt="" loading="lazy"><b data-en="Development">개발 사업</b><span>#대방산업개발 #개발사업</span></a></li>
+      <li><a href="sub.html?p=brand/projects#s-business-order"><img src="assets/img/b1.jpg" alt="" loading="lazy"><b data-en="Contracting">수주 사업</b><span>#대방산업개발 #수주사업</span></a></li>
     </ul>
   </div>
 </section>
@@ -210,8 +114,8 @@
       <li><a href="https://www.db-dvp.co.kr/"><b>개인정보처리방침</b></a></li>
       <li><a href="https://www.db-dvp.co.kr/">이용약관</a></li>
       <li><a href="https://www.db-dvp.co.kr/">이메일무단수집거부</a></li>
-      <li><a href="sub.html?p=cs/customer">고객문의</a></li>
-      <li><a href="sub.html?p=recruit/apply">인재채용</a></li>
+      <li><a href="sub.html?p=cs/as">고객문의</a></li>
+      <li><a href="sub.html?p=career/jobs">인재채용</a></li>
     </ul>
     <div class="fam"><span data-en="FAMILY SITE">관련 사이트</span>
         <a href="https://www.dbcons.co.kr/" target="_blank" rel="noopener" data-en="Daebang E&amp;C">대방건설</a>
@@ -232,6 +136,7 @@
 
 <script src="js/pages.js"></script>
 <script src="js/pages_en.js"></script>
+<script src="js/ia.js"></script>
 <script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 <script src="js/search.js"></script>
