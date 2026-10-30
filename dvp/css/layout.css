@@ -136,3 +136,70 @@
   .sub-visual .crumb{display:none}
   .sub-body .blk{padding:48px 0}
 }
+
+/* =========================================================
+   메인 간결화 (아티팩트 메인 구성: 비주얼 → 브랜드 슬로건 + 큰 사진 → 프로젝트 목록 → 푸터)
+   ========================================================= */
+.m-btn{display:inline-flex;align-items:center;min-height:50px;padding:0 26px;background:var(--navy);color:#fff;font-size:15px;font-weight:500;transition:background .2s}
+.m-btn::after{content:" →";margin-left:6px}
+.m-btn:hover{background:var(--navy-d)}
+.m-brand{padding:160px 0 120px}
+.m-brand .row-warp{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;row-gap:72px;align-items:start}
+.m-brand-h{grid-column:1/span 5}
+.m-brand .k,.m-proj .k{font-family:Oswald,sans-serif;font-weight:300;font-size:15px;letter-spacing:.2em;color:var(--sky)}
+.m-brand-h h1{margin-top:16px;font-size:58px;font-weight:300;line-height:1.2;letter-spacing:-.05em;color:var(--navy)}
+.m-brand-t{grid-column:7/span 6;padding-top:40px}
+.m-brand-t .lead{font-size:28px;font-weight:500;line-height:1.5;letter-spacing:-.04em;color:#111}
+.m-brand-t p{margin-top:20px;font-size:18px;line-height:1.85;font-weight:300;color:var(--ink)}
+.m-brand-t .m-btn{margin-top:36px}
+.m-brand-img{grid-column:1/-1;height:520px;overflow:hidden;background:var(--bg)}
+.m-brand-img img{width:100%;height:100%;object-fit:cover;object-position:50% 22%}
+.m-proj{padding:120px 0 160px;background:var(--bg)}
+.m-proj .row-warp{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;align-items:start}
+.m-proj-h{grid-column:1/span 5;position:sticky;top:calc(var(--hd) + 40px)}
+.m-proj-h h1{font-size:50px;font-weight:300;line-height:1.2;letter-spacing:-.05em;color:var(--navy);margin-bottom:28px}
+.m-proj-list{grid-column:7/span 6;display:flex;flex-direction:column;gap:8px}
+.m-proj-list a{display:grid;grid-template-columns:120px minmax(0,1fr);grid-template-rows:auto auto;column-gap:24px;align-items:center;padding:12px;background:#fff;transition:box-shadow .3s}
+.m-proj-list a:hover{box-shadow:0 10px 24px rgba(18,40,90,.12)}
+.m-proj-list img{grid-row:1/span 2;width:120px;height:80px;object-fit:cover}
+.m-proj-list b{align-self:end;font-size:19px;font-weight:500;letter-spacing:-.04em;color:#111}
+.m-proj-list span{align-self:start;font-size:13px;font-weight:700;color:var(--navy)}
+.m-proj-list a:hover b{color:var(--navy)}
+
+/* =========================================================
+   합쳐진 서브 페이지: 페이지 안 목차 + 구획 제목 + 숫자
+   ========================================================= */
+.pnav{display:flex;flex-wrap:wrap;gap:8px;padding:40px 0 0}
+.pnav a{display:inline-flex;align-items:center;min-height:40px;padding:0 18px;border:1px solid #d5dbe6;border-radius:20px;font-size:14px;font-weight:400;color:#444;transition:border-color .2s,color .2s}
+.pnav a:hover{border-color:var(--navy);color:var(--navy)}
+.part-h{display:flex;align-items:baseline;gap:18px;margin-top:80px;padding-bottom:20px;border-bottom:2px solid var(--navy);scroll-margin-top:calc(var(--hd) + 20px)}
+.part-h span{font-family:Oswald,sans-serif;font-weight:300;font-size:22px;color:var(--sky)}
+.part-h h2{font-size:32px;font-weight:400;letter-spacing:-.05em;color:var(--navy)}
+.part-h + .blk{border-top:0}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.stats div{padding-top:24px;border-top:1px solid var(--navy)}
+.stats dt{font-size:14px;font-weight:700;color:var(--navy)}
+.stats dd{margin-top:28px;display:flex;align-items:flex-end;gap:4px}
+.stats strong{font-family:Oswald,"Noto Sans KR",sans-serif;font-size:55px;line-height:1;font-weight:300;color:var(--ink)}
+.stats dd span{font-size:15px;font-weight:700;color:var(--gray)}
+[id^="s-"]{scroll-margin-top:calc(var(--hd) + 20px)}
+
+@media(max-width:1000px){
+  .m-brand-h,.m-brand-t,.m-proj-h,.m-proj-list{grid-column:1/-1}
+  .m-brand .row-warp{row-gap:32px}
+  .m-brand-t{padding-top:0}
+  .m-proj-h{position:static;margin-bottom:40px}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:760px){
+  .m-brand{padding:72px 0}
+  .m-brand-h h1{font-size:38px}
+  .m-brand-t .lead{font-size:22px}
+  .m-brand-img{height:260px}
+  .m-proj{padding:72px 0}
+  .m-proj-h h1{font-size:34px}
+  .m-proj-list a{grid-template-columns:88px minmax(0,1fr);column-gap:14px}
+  .m-proj-list img{width:88px;height:64px}
+  .m-proj-list b{font-size:16px}
+  .part-h{margin-top:56px}.part-h h2{font-size:24px}
+}
