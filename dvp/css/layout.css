@@ -1,0 +1,138 @@
+/* =========================================================
+   layout.css — 페이지 구성(레이아웃)만 '대방산업개발 홈페이지 레이아웃' 아티팩트 기준으로 재배치
+   색상·서체·사진·효과(무드)는 style.css / sub.css / extra.css 그대로 사용
+   ========================================================= */
+
+/* ---------- 공통 그리드: 1344px 컨테이너, 좌우 48px 여백 ---------- */
+:root{--w:1344px;--hd:88px;--gut:48px}
+.row-warp,.header-inner{max-width:var(--w);padding-left:var(--gut);padding-right:var(--gut)}
+
+/* ---------- 헤더: 로고(좌) · 메뉴(중앙 고정폭) · 유틸(우) ---------- */
+.header-inner{gap:24px}
+.logo{flex:1 1 0;min-width:0}
+.gnb{flex:0 1 816px}
+.gnb>ul{justify-content:center;margin-right:0}
+.gnb>ul>li{flex:1 1 0;min-width:0;text-align:center}
+.gnb>ul>li>a{padding:0 6px}
+.gnb .sub{left:0;width:100%;min-width:0;padding:30px 0 30px;text-align:center}
+.gnb .sub a{padding:7px 0}
+.util{flex:1 1 0;justify-content:flex-end}
+.header.is-hover .gnb-bg{height:320px}
+/* 메가메뉴 왼쪽 대표 사진 + 회사명/슬로건 */
+.gnb-photo{position:absolute;top:32px;left:max(var(--gut),calc((100% - var(--w))/2 + var(--gut)));width:200px;opacity:0;transition:opacity .3s .05s}
+.header.is-hover .gnb-photo{opacity:1}
+.gnb-photo img{width:200px;height:130px;object-fit:cover}
+.gnb-photo b{display:block;margin-top:14px;font-size:18px;font-weight:700;color:#111;letter-spacing:-.04em}
+.gnb-photo span{display:block;font-size:13px;font-weight:300;color:var(--navy)}
+@media(max-width:1360px){.gnb-photo{display:none}}
+
+/* ---------- 메인 비주얼: 문구 좌하단, CTA와 슬라이드 점을 한 줄에 ---------- */
+.main-visual{height:860px;max-height:100vh}
+.slide .cap{left:0;right:0;transform:none;margin:0 auto;padding:0 var(--gut);bottom:104px}
+.cap h2{margin:14px 0 30px}
+.vdots{left:auto;margin-left:0;transform:none;bottom:116px;right:max(var(--gut),calc((100% - var(--w))/2 + var(--gut)))}
+.vdots button{height:4px}
+.scroll,.main-policy{bottom:36px}
+
+/* ---------- 섹션 머리: 제목(좌) + more(우), 아래 1px 선 ---------- */
+.sec-head{align-items:flex-end;padding-bottom:24px;border-bottom:1px solid var(--navy)}
+.more{display:inline-flex;align-items:center;min-height:40px;padding:0 18px;border:1px solid var(--navy);border-radius:20px}
+.news-cards,.panels,.masonry,.marq{margin-top:40px}
+
+/* ---------- 슬로건 섹션: 12단 그리드 5 / 6 분할 + 카운터 한 줄 ---------- */
+.sec1{padding:140px 0 110px}
+.sec1 .row-warp{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;align-items:start}
+.sec1 h1{grid-column:1/span 6}
+.sec1 p{grid-column:8/span 5;margin-top:12px}
+.sec1 .count-warp{grid-column:1/-1;margin-top:80px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.count-warp dl{width:auto;padding-top:28px;border-top:1px solid var(--navy)}
+
+/* ---------- 섹션 간격 통일 ---------- */
+.sec2,.sec3p,.sec4,.gal{padding-top:120px}
+.sec2{padding-bottom:120px}
+.sec3p .panels{max-width:var(--w);margin-left:auto;margin-right:auto;padding:0 var(--gut);gap:0}
+
+/* ---------- 주요 프로젝트: 제목 열(좌 3) + 프로젝트(우 9) ---------- */
+.sec4{padding-bottom:120px}
+.sec4 .row-warp{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;align-items:start}
+.sec4 .sec-head{grid-column:1/span 3;position:sticky;top:calc(var(--hd) + 32px);flex-direction:column;align-items:flex-start;gap:20px;border-bottom:0;padding-bottom:0}
+.sec4 .masonry{grid-column:4/-1;margin-top:0;padding:0;gap:24px}
+.masonry .col{width:auto;flex:1 1 0;min-width:0}
+
+/* ---------- 갤러리: 컨테이너 왼쪽 선에 맞춤 ---------- */
+.marq .track{padding:0 max(var(--gut),calc((100vw - var(--w))/2 + var(--gut)))}
+
+/* ---------- 경영이념: 제목 열(좌 5) + 이념 목록(우 6) ---------- */
+.phil{padding:120px 0}
+.phil .row-warp{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;align-content:start}
+.phil .k,.phil h1,.phil .go{grid-column:1/span 5}
+.phil .go{justify-self:start;align-self:start}
+.phil ul{grid-column:7/span 6;grid-row:1/span 4;margin-top:0;grid-template-columns:1fr;gap:28px}
+
+/* ---------- 바로가기 배너 ---------- */
+.sec5{height:auto;padding-bottom:120px}
+.sec5 .row-warp{padding-top:120px}
+.main-down{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.main-down li{width:auto}
+
+/* ---------- 푸터: 로고 + 관련사이트 / 링크 줄 / 회사 정보 ---------- */
+.footer{padding:72px 0 56px}
+.footer .row-warp{display:grid;grid-template-columns:auto 1fr;grid-template-areas:"logo fam" "links links" "info info";align-items:center;gap:28px 24px}
+.f-row{display:contents}
+.f-logo{grid-area:logo;width:170px}
+.fam{grid-area:fam;justify-content:flex-end;padding:0}
+.f-links{grid-area:links;padding:18px 0;border-top:1px solid rgba(255,255,255,.14);border-bottom:1px solid rgba(255,255,255,.14)}
+.f-info{grid-area:info}
+
+/* ---------- 서브 비주얼: 큰 제목(좌) + 영문 라벨(우), 세로 위치표시 ---------- */
+.sub-visual .row-warp{display:grid;grid-template-columns:1fr auto;align-items:end;column-gap:24px;padding-bottom:64px;width:100%}
+.sub-visual h1{grid-column:1;grid-row:2}
+.sub-visual .sub-en{grid-column:2;grid-row:2;margin:0 0 10px;text-align:right}
+.sub-visual .crumb{position:absolute;left:16px;bottom:64px;margin:0;writing-mode:vertical-rl;transform:rotate(180deg);font-size:12px;letter-spacing:.2em;white-space:nowrap}
+
+/* ---------- 하위 메뉴(cnb): 컨테이너 폭에 맞춤 ---------- */
+.sub-tab .row-warp{gap:0}
+
+/* ---------- 본문: 12단 그리드, 소제목(eyebrow) 왼쪽 3단 · 내용 오른쪽 9단 ---------- */
+.sub-body .blk{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;padding:80px 0}
+.sub-body .blk>*{grid-column:4/-1;min-width:0}
+.sub-body .blk>.eb:first-child{grid-column:1/span 3;grid-row:1/span 30;align-self:start;margin-top:6px}
+.sub-body .blk>.eb:first-child + h2,.sub-body .blk>.eb:first-child + h3{margin-top:0}
+.sub-body .blk.ph>*,.sub-body .blk:has(.gallery)>*{grid-column:1/-1}
+.sub-body .blk.ph{padding:0 0 8px}
+.sub-body .blk.ph + .blk{padding-top:80px}
+
+/* ---------- 반응형 ---------- */
+@media(max-width:1200px){
+  :root{--gut:24px}
+  .sec4 .sec-head{grid-column:1/-1;position:static;flex-direction:row;align-items:flex-end;border-bottom:1px solid var(--navy);padding-bottom:24px;margin-bottom:40px}
+  .sec4 .masonry{grid-column:1/-1}
+  .sub-body .blk>.eb:first-child{grid-column:1/-1;grid-row:auto;margin-bottom:14px}
+  .sub-body .blk>*{grid-column:1/-1}
+}
+@media(max-width:1000px){
+  .gnb{display:none}
+  .util{margin-right:0}
+  .sec1 h1,.sec1 p{grid-column:1/-1}
+  .sec1 p{margin-top:24px}
+  .sec1 .count-warp{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 24px}
+  .phil .k,.phil h1,.phil .go,.phil ul{grid-column:1/-1;grid-row:auto}
+  .phil ul{margin-top:40px}
+  .phil .go{margin-top:40px}
+  .main-down{grid-template-columns:1fr}
+  .vdots{bottom:40px;right:auto;left:var(--gut)}
+}
+@media(max-width:760px){
+  :root{--gut:20px;--hd:64px}
+  .main-visual{height:640px}
+  .slide .cap{bottom:120px}
+  .sec1,.sec2,.sec3p,.sec4,.gal,.phil{padding-top:72px}
+  .sec2,.sec4,.phil,.sec5{padding-bottom:72px}
+  .sec5 .row-warp{padding-top:72px}
+  .footer .row-warp{grid-template-columns:1fr;grid-template-areas:"logo" "fam" "links" "info"}
+  .fam{justify-content:flex-start}
+  .sub-visual .row-warp{grid-template-columns:1fr;padding-bottom:36px}
+  .sub-visual .sub-en{grid-column:1;grid-row:3;text-align:left;margin-top:8px}
+  .sub-visual .crumb{display:none}
+  .sub-body .blk{padding:48px 0}
+}
