@@ -210,3 +210,10 @@ html.en .sub-visual .sub-en{display:none}
 .header.is-hover::before,.header.is-solid::before{opacity:0}
 
 .slide{transform:scale(1.03)}.slide.on{transform:scale(1)}
+@media(max-width:400px){
+  .logo img{height:21px}
+  .util{margin-right:52px;gap:2px}
+  .util-en{padding:0 9px;height:28px;font-size:13px;margin-right:2px}
+  .util-btn{width:32px;height:32px}
+  .util-btn img{width:28px}
+}
